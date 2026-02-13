@@ -1,0 +1,32 @@
+- role: Advisor
+  members:
+    - first_name: Paul
+      last_name: Rayson
+      institution: Lancaster University, UK
+    - first_name: Ruslan
+      last_name: Mitkov
+      institution: Lancaster University, UK
+    - first_name: Mohamed
+      last_name: Gaber
+      institution: Queensland University of Technology, Australia
+
+- role: Organising Committee
+  members:
+    - first_name: Hansi
+      last_name: Hettiarachchi
+      institution: Lancaster University, UK
+    - first_name: Tharindu
+      last_name: Ranasinghe
+      institution: Lancaster University, UK
+    - first_name: Alistair
+      last_name: Plum
+      institution: University of Luxembourg, Luxembourg
+    - first_name: Damith
+      last_name: Premasiri
+      institution: Lancaster University, UK
+    - first_name: Fiona Anting
+      last_name: Tan
+      institution: National University of Singapore, Singapore
+    - first_name: Lasitha
+      last_name: Uyangodage
+      institution: University of Münster, Germany

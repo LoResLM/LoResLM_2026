@@ -1,0 +1,2926 @@
+- abstract: Large pretrained language models have demonstrated remarkable capabilities
+    across diverse languages, yet critically underrepresented low-resource languages
+    remain marginalized. We present NE-BERT, a domain-specific multilingual encoder
+    model trained on approximately 8.3 million sentences spanning 9 Northeast Indian
+    languages and 2 anchor languages (Hindi, English), a linguistically diverse region
+    with minimal representation in existing multilingual models. By employing weighted
+    data sampling and a custom SentencePiece Unigram tokenizer, NE-BERT outperforms
+    IndicBERT-V2 and MuRIL across all 9 Northeast Indian languages, achieving 15.97×
+    and 7.64× lower average perplexity respectively, with 1.50× better tokenization
+    fertility than mBERT. We address critical vocabulary fragmentation issues in extremely
+    low-resource languages such as Pnar (1,002 sentences) and Kokborok (2,463 sentences)
+    through aggressive upsampling strategies. Downstream evaluation on part-of-speech
+    tagging validates practical utility on three Northeast Indian languages. We release
+    NE-BERT, test sets, and training corpus under CC-BY-4.0 to support NLP research
+    and digital inclusion for Northeast Indian communities.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Badal
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=Hs5jQJYAAAAJ&view_op=list_works
+    homepage: https://mwirelabs.com/
+    institution: MWire Labs
+    last_name: Nyalang
+    name: Badal Nyalang
+    orcid: https://orcid.org/0009-0006-6923-0797
+    username: ~Badal_Nyalang1
+  decision: '2026'
+  file: 3.pdf
+  id: 3
+  openreview_id: h1t9EPTejZ
+  pdf_file: 088d3e0b180471027c1ab8a81bce8b70072e2762.pdf
+  title: 'NE-BERT: A Multilingual Language Model for Nine Northeast Indian Languages'
+- abstract: 'We present, to our knowledge, the first systematic evaluation of tokenization
+    quality for \emph{informal Hindi expressions}, combining static, downstream, and
+    robustness analyses. Our investigation centers on three questions: (RQ1) how well
+    tokenizers preserve informal expression units using static boundary and integrity
+    metrics, (RQ2) how tokenization choices affect downstream identification of informal
+    expressions, and (RQ3) how robust tokenizers remain under orthographic variation,
+    romanization, and noisy spelling. Across multilingual, Indic-focused, and byte-level
+    tokenizers, we find that Indic-oriented models (e.g., MuRIL, IndicBERT) preserve
+    expression boundaries better and achieve higher downstream F1 on clean text than
+    generic multilingual models (e.g., mBERT, XLM-R). However, all tokenizers exhibit
+    severe degradation under romanization, with phrase integrity rates approaching
+    zero. These findings demonstrate that tokenization constitutes a hidden but critical
+    bottleneck for informal Hindi NLP, particularly in cross-script settings, and
+    motivate the need for tokenization strategies that explicitly account for phrase-level
+    semantics and orthographic variation.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/257/3078
+    emails: '****@gmail.com'
+    first_name: Manikandan
+    google_scholar_id: https://scholar.google.co.in/citations?user=wY_iqNwAAAAJ&hl=en
+    homepage: http://manikandan-ravikiran.github.io/
+    last_name: Ravikiran
+    name: Manikandan Ravikiran
+    semantic_scholar_id: https://www.semanticscholar.org/author/147577950
+    username: ~Manikandan_Ravikiran1
+  - emails: '****@students.iitmandi.ac.in'
+    first_name: Tanmay
+    last_name: Tiwari
+    name: Tanmay Tiwari
+    username: ~Tanmay_Tiwari1
+  - emails: '****@students.iitmandi.ac.in'
+    first_name: Vibhu
+    last_name: Gupta
+    name: Vibhu Gupta
+    username: ~Vibhu_Gupta1
+  - emails: '****@colorado.edu'
+    first_name: Rakesh
+    institution: University of Colorado at Boulder
+    last_name: Prakash
+    name: Rakesh Prakash
+    username: ~Rakesh_Prakash1
+  - dblp_id: https://dblp.org/pid/213/8378.html
+    emails: '****@iitmandi.ac.in'
+    first_name: Rohit
+    google_scholar_id: https://scholar.google.com/citations?user=2VhkkksAAAAJ&hl=en
+    homepage: https://rohitsaluja22.github.io/
+    last_name: Saluja
+    name: Rohit Saluja
+    semantic_scholar_id: https://www.semanticscholar.org/author/Rohit-Saluja/145176210
+    username: ~Rohit_Saluja2
+  - emails: '****@thoughtworks.com'
+    first_name: Shayan
+    homepage: https://x.com/shayanjm
+    institution: Thoughtworks
+    last_name: Mohanty
+    name: Shayan Mohanty
+    username: ~Shayan_Mohanty1
+  decision: '2026'
+  file: 5.pdf
+  id: 5
+  openreview_id: s0cdDl5Cas
+  pdf_file: 195f0f8ca88b6cdb01d2e7aaa51a6ccd3da07ca9.pdf
+  title: Do Tokenizers Fail on Informal Hindi Expressions? Evidence from Static, Downstream,
+    and Robustness Analyses
+- abstract: 'As Large Language Models (LLMs) approach
+
+    human-level reasoning in English, their performance in low-resource, code-mixed
+    languages
+
+    remains surprisingly brittle. We identify Competence Collapse, a distinct pathology
+    where
+
+    models capable of complex reasoning in English exhibit severe utility degradation
+    when
+
+    prompted in Hinglish (Hindi-English). We
+
+    quantify this as a Service Gap, observing a
+
+    statistically significant decline in instructional
+
+    quality (∆D ≈ −11.3%, p < 0.001) across
+
+    9 diverse architectures. Spectral analysis suggests that this stems from a representational
+
+    divergence between the model’s High-Utility
+
+    Direction and its Generation Subspace. To
+
+    bridge this gap, we propose Cross-Lingual
+
+    Activation Steering (CLAS), an inferencetime intervention that injects a "Competence
+
+    Gap Vector" into the residual stream. Evaluated across 6 open-weight models (using
+    a
+
+    lightweight calibration set, N = 50), CLAS
+
+    recovered utility by ∆D = +2.22 (d = 0.60)
+
+    while preserving code-mixed fidelity (CMI ≈
+
+    0.4) and reinforcing safety protocols.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@iiserb.ac.in'
+    first_name: Tanushree
+    homepage: https://medium.com/@yadav23/chasing-solar-flares-and-losing-sanity-a-summer-with-sharmas-paper-8fd650abf475
+    last_name: Yadav
+    middle_name: Ravindra Pratap
+    name: Tanushree Ravindra Pratap Yadav
+    username: ~Tanushree_Ravindra_Pratap_Yadav1
+  decision: '2026'
+  file: 6.pdf
+  id: 6
+  openreview_id: VaJnFudkGc
+  pdf_file: 890c466c593e3f170a24e1b4fc0c3dc66ad4bb6c.pdf
+  title: 'Competence Collapse in Code-Mixed Generation: Spectral Evidence and Mechanistic
+    Recovery via Cross-Lingual Activation Steering'
+- abstract: Multilingual evaluation often relies on language coverage or translated
+    benchmarks, implicitly assuming that subword tokenization behaves comparably across
+    scripts. In mixed-script settings, this assumption breaks down. We examine this
+    effect using polarity detection as a case study, comparing Orthographic Syllable
+    Pair Encoding (OSPE) and Byte Pair Encoding (BPE) under identical architectures,
+    data, and training conditions on SemEval Task 9, which spans Devanagari, Perso-Arabic,
+    and Latin scripts. OSPE is applied to Hindi, Nepali, Urdu, and Arabic, while BPE
+    is retained for English. We find that BPE systematically underestimates performance
+    in abugida and abjad scripts, producing fragmented representations, unstable optimization,
+    and drops of up to 27 macro-F1 points for Nepali, while English remains largely
+    unaffected. Script-aware segmentation preserves orthographic structure, stabilizes
+    training, and improves cross-language comparability without additional data or
+    model scaling, highlighting tokenization as a latent but consequential evaluation
+    decision in multilingual benchmarks.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Manodyna
+    google_scholar_id: https://scholar.google.com/citations?user=XqmYoEcAAAAJ&hl=en
+    last_name: H
+    middle_name: K
+    name: Manodyna K H
+    orcid: https://orcid.org/0009-0009-2610-0759
+    username: ~Manodyna_K_H1
+  - emails: '****@colorado.edu'
+    first_name: Luc
+    homepage: https://look-luc.github.io/luc_portfolio/
+    institution: University of Colorado at Boulder
+    last_name: De Nardi
+    name: Luc De Nardi
+    username: ~Luc_De_Nardi1
+  decision: '2026'
+  file: 7.pdf
+  id: 7
+  openreview_id: Xc79z7ltUK
+  pdf_file: a1458f7fc5bcf5554added777751e45ae2520e2b.pdf
+  title: 'When Multilingual Evaluation Assumptions Fail: Tokenization Effects Across
+    Scripts'
+- abstract: Can large language models converse in languages virtually absent from
+    their training data? We investigate this question through a case study on Tulu,
+    a Dravidian language with over two million speakers but minimal digital presence.
+    Rather than fine-tuning, we examine whether structured prompt engineering alone
+    can elicit basic conversational ability under extreme data scarcity. Our framework
+    combines explicit grammar documentation, negative constraints to suppress high-probability
+    tokens from related languages, romanization standardization, and quality-controlled
+    synthetic data generation via self-play. Evaluated on a manually curated held-out
+    set across three LLMs (Gemini 2.0 Flash, GPT-4o, and Llama 3.1 70B) and validated
+    by native speakers, our approach reduces vocabulary contamination from 80% to
+    5% while achieving 85% grammatical accuracy. Cross-model analysis shows that negative
+    constraints provide consistent improvements (12–18 percentage points), while the
+    effectiveness of grammar documentation varies by model architecture (8–22 points).
+    These results demonstrate that structured in-context learning can meaningfully
+    extend LLM capabilities to extremely low-resource languages without parameter
+    updates.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/415/1480
+    emails: '****@gmail.com'
+    first_name: Prathamesh
+    last_name: Devadiga
+    name: Prathamesh Devadiga
+    orcid: https://orcid.org/0009-0000-2948-4799
+    semantic_scholar_id: https://www.semanticscholar.org/author/Prathamesh-Devadiga/2376128762
+    username: ~Prathamesh_Devadiga1
+  - emails: '****@lossfunk.com'
+    first_name: Paras
+    google_scholar_id: https://scholar.google.com/citations?user=cTzAbGMAAAAJ&hl=en
+    homepage: https://invertedpassion.com/
+    institution: Lossfunk
+    last_name: Chopra
+    name: Paras Chopra
+    username: ~Paras_Chopra1
+  decision: '2026'
+  file: 9.pdf
+  id: 9
+  openreview_id: iWrPnxjf8Z
+  pdf_file: 6ef14f39373875e30a840d08ad124c8df5515b9b.pdf
+  title: 'Making Large Language Models Speak Tulu: Structured Prompting for an Extremely
+    Low-Resource Language'
+- abstract: 'The work demonstrates how meaningful rhetorical signals can be isolated
+    from a social media dataset even without pre-labelled data or predefined lexicons.
+    By combining unsupervised mining with linguistic theory and interpretable machine
+    learning, the research offers a scalable approach to understanding how language
+    can shape political perception and behaviour in digital spaces.
+
+    The study focuses on Bulgarian, a morphologically rich, relatively low-resource
+    language, and produces reusable resources—alert constructions, post-level features,
+    and trained classifiers—that are explicitly designed to support low-resource language
+    modelling, including the training and evaluation of neural language models and
+    LLMs for tasks such as content moderation and propaganda-alert detection. The
+    finding that rhetorical salience, not just topical content, drives engagement
+    has implications beyond Bulgarian: it suggests that how something is said may
+    matter as much as what is said in determining a message''s viral potential and
+    persuasive impact.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Ruslana
+    google_scholar_id: https://scholar.google.com/citations?user=iCq3LgcAAAAJ&hl=bg
+    last_name: Margova
+    name: Ruslana Margova
+    orcid: https://orcid.org/0000-0001-6243-104X
+    username: ~Ruslana_Margova1
+  - emails: '****@gate-ai.eu'
+    first_name: Stanislav
+    institution: GATE Institute, Sofia University
+    last_name: Penkov
+    name: Stanislav Penkov
+    username: ~Stanislav_Penkov1
+  decision: '2026'
+  file: 10.pdf
+  id: 10
+  openreview_id: sQ8cQKOYfo
+  pdf_file: c1df10b20a57f34d185a46860ed3779b2ce444b8.pdf
+  title: 'To make someone do something: mining alert-style directives in Bulgarian
+    social media for low-resource language modelling'
+- abstract: 'Bangla is a language spoken by approximately 240 million native speakers
+    and around 300 million people worldwide. Despite being the 5th largest spoken
+    language in the world, Bangla is still a "low-resource" language, and existing
+    pretrained language models often struggle to perform well on Bangla Language Processing
+    (BLP) tasks. This paper addresses this gap by: (1) introducing two high-quality
+    translated Bangla-instruction datasets totaling 224k samples – Bangla-Orca (172k)
+    and Bangla-Alpaca (52k); and (2) leveraging these datasets to develop BanglaLlama,
+    an open-source family of Bangla-specific LLMs, consisting of five base and instruct
+    variants. We present our methodology, two large datasets, and comprehensive benchmarking
+    results showcasing the effectiveness of our dataset and model on multiple benchmarks.
+    We believe our proposed datasets and models will serve as the new standard baseline
+    for future research focused on this widely spoken yet "low-resource" language.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@yahoo.com'
+    first_name: Abdullah
+    google_scholar_id: https://scholar.google.com/citations?user=FA5RZj0AAAAJ&hl=en
+    institution: Ciroos
+    last_name: Zehady
+    middle_name: Khan
+    name: Abdullah Khan Zehady
+    username: ~Abdullah_Khan_Zehady1
+  - dblp_id: https://dblp.org/pid/266/3952
+    emails: '****@umbc.edu'
+    first_name: Shubhashis
+    google_scholar_id: https://scholar.google.com/citations?user=j2ElsNIAAAAJ&hl=en
+    homepage: https://roydipta.com/
+    last_name: Roy Dipta
+    name: Shubhashis Roy Dipta
+    orcid: https://orcid.org/0000-0002-9176-1782
+    semantic_scholar_id: https://www.semanticscholar.org/author/Shubhashis-Roy-Dipta/50425406
+    username: ~Shubhashis_Roy_Dipta1
+  - emails: '****@gmail.com'
+    first_name: Naymul
+    institution: 'Individual Researcher '
+    last_name: Islam
+    name: Naymul Islam
+    username: ~Naymul_Islam1
+  - emails: '****@gmail.com'
+    first_name: Safi
+    last_name: Al Mamun
+    name: SAFI AL MAMUN
+    username: ~SAFI_AL_MAMUN1
+  - dblp_id: https://dblp.org/pid/150/3985
+    emails: '****@ucf.edu'
+    first_name: Santu
+    google_scholar_id: https://scholar.google.com/citations?user=y6pZKT4AAAAJ&hl=en
+    homepage: https://karmake2.github.io/
+    institution: University of Central Florida
+    last_name: Karmaker
+    name: Santu Karmaker
+    orcid: https://orcid.org/0000-0001-5744-6925
+    semantic_scholar_id: https://www.semanticscholar.org/author/Shubhra-(Santu)-Karmaker/2692077
+    username: ~Santu_Karmaker2
+  decision: '2026'
+  file: 11.pdf
+  id: 11
+  openreview_id: 0ufqUOtdQx
+  pdf_file: 97d4dfc9ec7f7c3c67417a0781f305e3799eb897.pdf
+  title: 'BanglaLlama: LLaMA for Bangla Language'
+- abstract: 'Large Language Models (LLMs) have the potential to improve healthcare
+    information access in Nigeria, but they risk generating unsafe or inaccurate responses
+    when used in low-resource languages such as Yorùbá. Retrieval-Augmented Generation
+    (RAG) has since emerged as a promising approach to mitigate hallucinations by
+    grounding LLM outputs in verified knowledge sources. To assess its effectiveness
+    in low-resource contexts, we construct a controlled Yorùbá QA dataset derived
+    from Nigerian drug labels, comprising 460 question–answer pairs across 92 drugs,
+    which was used to evaluate the impact of different retrieval strategies: hybrid
+    lexical–semantic retrieval, Hypothetical Document Embeddings(HyDE), and Cross-Encoder
+    re-ranking. Our results show that hybrid retrieval strategies, combining lexical
+    and semantic signals, generally yield more reliable and clinically accurate responses,
+    while other advanced re-ranking approaches show inconsistent improvements. These
+    findings hereby underscore the importance of effective retrieval design for safe
+    and trustworthy multilingual healthcare QA systems.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@student.oauife.edu.ng'
+    first_name: Zainab
+    homepage: https://zayneeh.github.io/
+    last_name: Tairu
+    name: Zainab Tairu
+    username: ~Zainab_Tairu1
+  - emails: '****@student.oauife.edu.ng'
+    first_name: Aramide
+    last_name: Adebesin
+    name: Aramide Adebesin
+    username: ~Aramide_Adebesin1
+  decision: '2026'
+  file: 12.pdf
+  id: 12
+  openreview_id: S08C0X0iYL
+  pdf_file: 64644899a7602d3220e87484dce2b4e4aaf0fd66.pdf
+  title: Evaluating Retrieval-Augmented Generation for Medication Question Answering
+    on Nigerian Drug Labels in Yorùbá
+- abstract: 'Grammatical error correction (GEC) aims to improve text quality and readability.
+    Previous work on the task focused primarily on high-resource languages, while
+    low-resource languages lack robust tools. To address this shortcoming, we present
+    a study on GEC for Zarma, a language spoken by over five million people in West
+    Africa. We compare three approaches: rule-based methods, machine translation (MT)
+    models, and large language models (LLMs). We evaluated GEC models using a dataset
+    of more than 250,000 examples, including synthetic and human-annotated data. Our
+    results showed that the MT-based approach using M2M100 outperforms others, with
+    a detection rate of 95.82% and a suggestion accuracy of 78.90% in automatic evaluations
+    (AE) and an average score of 3.0 out of 5.0 in manual evaluation (ME) from native
+    speakers for grammar and logical corrections. The rule-based method was effective
+    for spelling errors but failed on complex context-level errors. LLMs---Gemma 2b
+    and MT5-small---showed moderate performance. Our work supports use of MT models
+    to enhance GEC in low-resource settings, and we validated these results with Bambara,
+    another West African language.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@rit.edu'
+    first_name: Mamadou
+    last_name: Keita
+    middle_name: K.
+    name: Mamadou K. KEITA
+    username: ~Mamadou_K._KEITA1
+  - dblp_id: https://dblp.org/pid/47/7983
+    emails: '****@gmu.edu'
+    first_name: Marcos
+    google_scholar_id: https://scholar.google.com.au/citations?user=vAx7VsoAAAAJ
+    homepage: https://mzampieri.com/
+    institution: George Mason University
+    last_name: Zampieri
+    name: Marcos Zampieri
+    orcid: https://orcid.org/0000-0002-2346-3847
+    username: ~Marcos_Zampieri1
+  - dblp_id: https://dblp.org/pid/h/VPless
+    emails: '****@cs.rit.edu'
+    first_name: Christopher
+    google_scholar_id: https://scholar.google.com.tw/citations?user=kU6puLcAAAAJ
+    homepage: https://www.cs.rit.edu/~cmh/
+    last_name: Homan
+    middle_name: M
+    name: Christopher M Homan
+    semantic_scholar_id: https://www.semanticscholar.org/author/Christopher-Homan/2300795
+    username: ~Christopher_M_Homan1
+  - emails: '****@alumni.ashesi.edu.gh'
+    first_name: Adwoa
+    institution: Ashesi University
+    last_name: Bremang
+    middle_name: Asantewaa
+    name: Adwoa Asantewaa Bremang
+    username: ~Adwoa_Asantewaa_Bremang1
+  - emails: '****@ashesi.edu.gh'
+    first_name: Dennis
+    institution: Ashesi University
+    last_name: Asamoah Owusu
+    name: Dennis Asamoah Owusu
+    username: ~Dennis_Asamoah_Owusu1
+  - emails: '****@rit.edu'
+    first_name: Huy
+    last_name: Le
+    name: Huy Le
+    username: ~Huy_Le4
+  decision: '2026'
+  file: 15.pdf
+  id: 15
+  openreview_id: 8k5NKWlJyL
+  pdf_file: 63daa3856698531df7b720ddab21813bf318bc60.pdf
+  title: 'Grammatical Error Correction for Low-Resource Languages: The Case of Zarma'
+- abstract: 'Multilingual Large Language Models (LLMs) often demonstrate impressive
+    zero-shot capabilities on low-resource languages. However, for languages that
+    share a script and significant lexical overlap with a high-resource language (HRL),
+    models may exhibit negative transfer. Focusing on Kamtapuri (Rajbanshi), a distinct
+    low-resource language of North Bengal, we investigate the extent to which SOTA
+    models (e.g., GPT-5.1, Gemini 2.5) preserve distinct dialectal features versus
+    reverting to the dominant language''s norms. We introduce the Kamta-Shibboleth-100
+    (Benchmark available at: https://github.com/kamtapuri-research/Kamta-Shibboleth-100-BENCHMARK),
+    a diagnostic benchmark derived from a curated 400k-token corpus. Our evaluation
+    reveals a significant discrepancy: while models show high receptive understanding
+    (up to 88% translation accuracy), they exhibit a 0% Syntactic Competence Rate
+    in zero-shot generation of distinct Kamtapuri morphology, compared to 96%+ accuracy
+    on a Standard Bengali control set. Even with 5-shot prompting, syntactic accuracy
+    improves only to 10%, while the Substitution Erasure Rate (SER) reaches 71%, systematically
+    replacing Kamtapuri vocabulary with Bengali cognates. We characterize this behavior
+    not as a lack of knowledge, but as a strong alignment bias toward high-resource
+    standards.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Roumak
+    institution: HackerRank and Precog @ IIITH
+    last_name: Das
+    name: Roumak Das
+    username: ~Roumak_Das1
+  decision: '2026'
+  file: 19.pdf
+  id: 19
+  openreview_id: sWPHruoYxW
+  pdf_file: 2dd23edc09e95a6df56eac3eca4e562eeed95722.pdf
+  title: 'Quantifying Cross-Lingual Interference: Algorithmic Standardization of Kamtapuri
+    in Large Language Models'
+- abstract: 'SinhaLegal introduces a Sinhala legislative text corpus containing approximately
+    2 million words across 1,206 legal documents. The dataset includes two types of
+    legal documents: 1,065 Acts dated from 1981 to 2014 and 141 Bills from 2010 to
+    2014, which were systematically collected from official sources. The texts were
+    extracted using OCR with Google Document AI, followed by extensive post-processing
+    and manual cleaning to ensure high-quality, machine-readable content, along with
+    dedicated metadata files for each document. A comprehensive evaluation was conducted,
+    including corpus statistics, lexical diversity, word frequency analysis, named
+    entity recognition, and topic modelling, demonstrating the structured and domain-specific
+    nature of the corpus. Additionally, perplexity analysis using both large and small
+    language models was performed to assess how effectively language models respond
+    to domain-specific texts. The SinhaLegal corpus represents a vital resource designed
+    to support NLP tasks such as summarisation, information extraction, and analysis,
+    thereby bridging a critical gap in Sinhala legal research.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@iit.ac.lk'
+    first_name: Minduli
+    last_name: Lasandi
+    name: Minduli Lasandi
+    username: ~Minduli_Lasandi1
+  - emails: '****@cse.mrt.ac.lk'
+    first_name: Nevidu
+    google_scholar_id: https://scholar.google.com/citations?user=2pDm_0UAAAAJ&hl=en
+    homepage: https://neviduj.github.io/Nevidu-Jayatilleke/
+    last_name: Jayatilleke
+    name: Nevidu Jayatilleke
+    orcid: https://orcid.org/0009-0008-9613-8376
+    username: ~Nevidu_Jayatilleke1
+  decision: '2026'
+  file: 21.pdf
+  id: 21
+  openreview_id: 4fDOGQvjFb
+  pdf_file: add339edabefdee890812e984e0dc6d288928702.pdf
+  title: 'SinhaLegal: A Benchmark Corpus for Information Extraction and Analysis in
+    Sinhala Legislative Texts'
+- abstract: Despite its widespread use, Bengali lacks a robust automated International
+    Phonetic Alphabet (IPA) transcription system that effectively supports both standard
+    language and regional dialectal texts. Existing approaches struggle to handle
+    regional variations, numerical expressions, and generalize poorly to previously
+    unseen words. To address these limitations, we propose BanglaIPA, a novel IPA
+    generation system that integrates a character-based vocabulary with word-level
+    alignment. The proposed system accurately handles Bengali numerals and demonstrates
+    strong performance across regional dialects. BanglaIPA improves inference efficiency
+    by leveraging a precomputed word-to-IPA mapping dictionary for previously observed
+    words. The system is evaluated on the standard Bengali and six regional variations
+    of the DUAL-IPA dataset. Experimental results show that BanglaIPA outperforms
+    baseline IPA transcription models by 58.4-78.7% and achieves an overall mean word
+    error rate of 11.4%, highlighting its robustness in phonetic transcription generation
+    for the Bengali language.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Jakir
+    google_scholar_id: https://scholar.google.com/citations?user=dxdi2gkAAAAJ&hl=en
+    homepage: https://jak57.github.io/
+    last_name: Hasan
+    name: Jakir Hasan
+    orcid: https://orcid.org/0009-0008-8473-2116
+    username: ~Jakir_Hasan1
+  - emails: '****@usf.edu'
+    first_name: Shrestha
+    google_scholar_id: https://scholar.google.com/citations?user=n_a0nuAAAAAJ&hl=en&oi=sra
+    institution: University of South Florida
+    last_name: Datta
+    name: Shrestha Datta
+    username: ~Shrestha_Datta1
+  - emails: '****@sust.edu'
+    first_name: Md Saiful
+    google_scholar_id: https://scholar.google.ca/citations?user=tQT0OSAAAAAJ&hl=en
+    homepage: https://www.sust.edu/d/cse/faculty-profile-detail/55
+    last_name: Islam
+    name: Md Saiful Islam
+    orcid: https://orcid.org/0000-0001-9236-380X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Md.-Saiful-Islam/30664567
+    username: ~Md_Saiful_Islam3
+  - dblp_id: https://dblp.org/pid/266/3952
+    emails: '****@umbc.edu'
+    first_name: Shubhashis
+    google_scholar_id: https://scholar.google.com/citations?user=j2ElsNIAAAAJ&hl=en
+    homepage: https://roydipta.com/
+    last_name: Roy Dipta
+    name: Shubhashis Roy Dipta
+    orcid: https://orcid.org/0000-0002-9176-1782
+    semantic_scholar_id: https://www.semanticscholar.org/author/Shubhashis-Roy-Dipta/50425406
+    username: ~Shubhashis_Roy_Dipta1
+  - emails: '****@lus.ac.bd'
+    first_name: Ameya
+    google_scholar_id: https://scholar.google.com/citations?user=Yirk3n4AAAAJ&hl=en
+    institution: Leading University
+    last_name: Debnath
+    name: Ameya Debnath
+    username: ~Ameya_Debnath1
+  decision: '2026'
+  file: 24.pdf
+  id: 24
+  openreview_id: YTtOnYhUEH
+  pdf_file: a50901124fe8b0d7478cf72f03e4cf8d54b83d8f.pdf
+  title: 'BanglaIPA: Towards Robust Text-to-IPA Transcription with Contextual Rewriting
+    in Bengali'
+- abstract: 'Large Language Models (LLMs) have recently exploded in popularity, often
+    matching or outperforming human abilities on many tasks. One of the key factors
+    in training LLMs is the availability and curation of high-quality data.
+
+    Data quality is especially crucial for under-represented languages, where high-quality
+    corpora are scarce. In this work we study the characteristics and coverage of
+    Romanian pretraining corpora and we examine how they differ from English data.
+    By training a lightweight multitask model on carefully LLM-annotated Romanian
+    texts, we are able to analyze and perform multi-level filtering (e.g., educational
+    value, topic, format) to generate high-quality pretraining datasets. Our experiments
+    show noteworthy trends in the topics present in Romanian and English data, while
+    also proving the effectiveness of filtering data through improved LLM pretraining
+    performance across multiple benchmarks.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Vlad-Andrei
+    institution: The National University of Science and Technology Politehnica Bucharest
+    last_name: Negoiță
+    name: Vlad-Andrei Negoiță
+    username: ~Vlad-Andrei_Negoiță1
+  - dblp_id: https://dblp.org/pid/206/1244
+    emails: '****@gmail.com'
+    first_name: Mihai
+    google_scholar_id: https://scholar.google.ro/citations?user=KDzBOtgAAAAJ&hl=ro
+    institution: University Politehnica of Bucharest
+    last_name: Masala
+    name: Mihai Masala
+    orcid: https://orcid.org/0000-0003-3496-9058
+    semantic_scholar_id: https://www.semanticscholar.org/author/Mihai-Masala/25199716
+    username: ~Mihai_Masala1
+  - dblp_id: https://dblp.org/pid/16/856
+    emails: '****@gmail.com'
+    first_name: Traian
+    google_scholar_id: https://scholar.google.com/citations?user=7NxaE1MAAAAJ&hl=en
+    homepage: https://scholar.google.com/citations?user=7NxaE1MAAAAJ&hl=en
+    institution: NVIDIA and University Politehnica of Bucharest
+    last_name: Rebedea
+    name: Traian Rebedea
+    orcid: https://orcid.org/0000-0002-7255-5537
+    semantic_scholar_id: https://www.semanticscholar.org/author/Traian-Rebedea/2796756
+    username: ~Traian_Rebedea1
+  decision: '2026'
+  file: 25.pdf
+  id: 25
+  openreview_id: KTMfD55agm
+  pdf_file: 7779baca8793d6c3f6037c529a85427b3b4b6d0c.pdf
+  title: Improving Romanian LLM Pretraining Data using Diversity and Quality Filtering
+- abstract: This research investigates the role of tone in Standard Yoruba Automatic
+    Speech Recognition (ASR), focusing on how explicit tone marking (diacritics) influences
+    accuracy and overall system performance. As a low-resource tonal language, Yoruba
+    encodes critical lexical and grammatical contrasts via pitch, making tone handling
+    both essential and challenging for ASR. Three pre-trained models, Meta’s MMS-1B-all,
+    OpenAI’s Whisper-small, and AstralZander/Yoruba_ASR, were trained and evaluated
+    on datasets that vary by tone annotation (fully tone-marked vs. non-tone-marked).
+    Using Word Error Rate (WER) and Tone Error Rate (TER) as primary metrics, results
+    consistently favored non-tone-marked data, yielding substantially lower error
+    rates than their tone-marked counterparts. These outcomes suggest that current
+    architectures encounter difficulties with diacritically marked Yoruba, likely
+    stemming from tokenization behavior, insufficient representation of tonal cues,
+    and limited tone modeling in the underlying pre-training. The study concludes
+    that tone-aware approaches, spanning tokenization, acoustic-text alignment, and
+    model objectives, are necessary to improve recognition for Yoruba and other low-resource
+    tonal languages. The findings clarify the interaction between linguistic tone
+    systems and computational modeling, and offer concrete directions for building
+    more robust, tone-sensitive ASR systems.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@student.oauife.edu.ng'
+    first_name: Joy
+    homepage: https://clrlcllms.github.io/CLRLCLLMs-workshop.github.io-NeurIPS-2025/
+    institution: Obafemi Awolowo University Ile-Ife
+    last_name: Olusanya
+    name: Joy Olusanya
+    username: ~Joy_Olusanya1
+  decision: '2026'
+  file: 26.pdf
+  id: 26
+  openreview_id: 2GyVxboj7M
+  pdf_file: b47fd6f6c8f7f1d1ba667889f8a046eaf65709a4.pdf
+  title: 'Tone in Yoruba ASR: Evaluating the Impact of Tone Recognition on Transformer-Based
+    ASR Models'
+- abstract: 'Evaluating Retrieval-Augmented Generation (RAG) systems remains a challenge
+    for Low-Resource Languages (LRLs), where standard reference-based metrics fall
+    short. This paper investigates the viability of the "LLM-as-a-Judge" paradigm
+    for Romanian by adapting the Ragas framework using next-generation models (Gemini
+    2.5 and Gemini 3). We introduce AdminRo-Eval, a curated dataset of Romanian administrative
+    documents annotated by native speakers, to serve as a ground truth for benchmarking
+    automated evaluators. We compare three evaluation methodologies—direct scoring,
+    comparative ranking, and granular decomposition—across metrics for Faithfulness,
+    Answer Relevance, and Context Relevance. Our findings reveal that evaluation strategies
+    must be metric-specific: granular decomposition achieves the highest human alignment
+    for Faithfulness (96\% with Gemini 2.5 Pro), while comparative ranking outperforms
+    in Answer Relevance (90\%). Furthermore, we demonstrate that while lightweight
+    models struggle with complex reasoning in LRLs, the Gemini 2.5 Pro architecture
+    establishes a robust, transferable baseline for automated Romanian RAG evaluation.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/361/0685
+    emails: '****@fmi.unibuc.ro'
+    first_name: Claudiu
+    google_scholar_id: https://scholar.google.com/citations?user=bksnABgAAAAJ&hl=en
+    homepage: https://claudiucreanga.github.io/
+    institution: University of Bucharest and University of Bucharest
+    last_name: Creanga
+    name: Claudiu Creanga
+    semantic_scholar_id: https://www.semanticscholar.org/author/Claudiu-Creanga/2267509472
+    username: ~Claudiu_Creanga1
+  - dblp_id: https://dblp.org/pid/50/3644.html
+    emails: '****@gmail.com'
+    first_name: Liviu
+    google_scholar_id: https://scholar.google.ro/citations?user=2SHcMNAAAAAJ&hl=en&oi=ao
+    homepage: https://nlp.unibuc.ro/people/liviu.html
+    institution: University of Bucharest
+    last_name: Dinu
+    middle_name: P
+    name: Liviu P Dinu
+    username: ~Liviu_P_Dinu1
+  decision: '2026'
+  file: 27.pdf
+  id: 27
+  openreview_id: 6bayFIkpp0
+  pdf_file: 270d60252766b5b18759d62f2bfa2f6854f43846.pdf
+  title: 'LLM-as-a-Judge for Low-Resource Languages: Adapting Ragas and Comparative
+    Ranking for Romanian'
+- abstract: 'Urdu, a morphologically rich and low-resource language spoken by over
+    300 million people, poses unique challenges for extractive machine reading comprehension
+    (EMRC), particularly in accurately identifying span boundaries involving postpositions
+    and copulas. Existing multilingual models struggle with subword fragmentation
+    and imprecise span extraction in such settings. We introduce QARI (قاری, “reader”),
+    a character-enhanced architecture for Urdu extractive MRC that augments pretrained
+    multilingual encoders with three innovations: (1) a character-level CNN that captures
+    affix patterns and morphological features from full word forms; (2) a gated fusion
+    mechanism that integrates semantic and morphological representations; and (3)
+    a boundary-contrastive learning objective targeting Urdu-specific span errors.
+    Evaluated on UQuAD+, the first native Urdu MRC benchmark, QARI achieves 83.5 F1,
+    a 5.5 point improvement over the previous best result (mT5, 78.0 F1), setting
+    a new state of the art. Ablations show that character-level modeling and boundary
+    supervision contribute +7.5 and +7.0 F1, respectively. Cross-dataset evaluations
+    on UQA and UrFQuAD confirm QARI’s robustness. Error analysis reveals significant
+    reductions in boundary drift, with improvements most notable for short factual
+    questions.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/56/107
+    emails: '****@gmail.com'
+    first_name: Samreen
+    google_scholar_id: https://scholar.google.com/citations?user=M9oj8WkAAAAJ&hl=en
+    institution: Institute of Business Administration (IBA) and Institute of Business
+      Administration (IBA)
+    last_name: Kazi
+    name: Samreen Kazi
+    orcid: https://orcid.org/0000-0002-5394-8298
+    username: ~Samreen_Kazi1
+  - dblp_id: https://dblp.org/pid/14/2698.html
+    emails: '****@iba.edu.pk'
+    first_name: Shakeel
+    google_scholar_id: https://scholar.google.com/citations?user=De9Dp0QAAAAJ&hl=en
+    homepage: https://oric.iba.edu.pk/profile.php?id=skhoja
+    institution: Institute of Business Administration (IBA)
+    last_name: Khoja
+    middle_name: Ahmed
+    name: Shakeel Ahmed Khoja
+    orcid: https://orcid.org/0000-0002-2275-7464
+    semantic_scholar_id: https://www.semanticscholar.org/author/S.-Khoja/145182839
+    username: ~Shakeel_Ahmed_Khoja1
+  decision: '2026'
+  file: 30.pdf
+  id: 30
+  openreview_id: vzMmCZY2HG
+  pdf_file: 2b3710f0390b95b22c8e33a2b507a5f4c9bc65bc.pdf
+  title: 'QARI: Neural Architecture for \\Urdu Extractive Machine Reading Comprehension'
+- abstract: This paper systematically evaluates LLM reliability on the complex semantic
+    task of Natural Language Inference (NLI) in Farsi, assessing six prominent models
+    across eight prompt variations through a multi-dimensional framework that measures
+    accuracy, prompt sensitivity, and intra-class consistency. Our results demonstrate
+    that prompt design—particularly the order of premise and hypothesis—significantly
+    impacts prediction stability. Proprietary models (Claude-Opus-4, GPT-4o) exhibit
+    superior stability and accuracy compared to open-weight alternatives. Across all
+    models, the 'Neutral' class emerges as the most challenging and least stable category.
+    Crucially, we redefine model instability as a diagnostic tool for benchmark quality,
+    demonstrating that observed disagreement often reflects valid challenges to ambiguous
+    or erroneous gold-standard labels.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Solmaz
+    last_name: Panahi
+    name: Solmaz Panahi
+    username: ~Solmaz_Panahi1
+  - dblp_id: https://dblp.org/pid/84/6254
+    emails: '****@tcd.ie'
+    first_name: John
+    google_scholar_id: https://scholar.google.com/citations?user=4FUPHHYAAAAJ&hl=en
+    institution: University of Dublin, Trinity College
+    last_name: Kelleher
+    name: John Kelleher
+    orcid: https://orcid.org/0000-0001-6462-3248
+    semantic_scholar_id: https://www.semanticscholar.org/author/John-D.-Kelleher/34967075
+    username: ~John_Kelleher1
+  - dblp_id: https://dblp.org/pid/318/0571
+    emails: '****@adaptcentre.ie'
+    first_name: Vasudevan
+    google_scholar_id: https://scholar.google.com/citations?user=LELSpxIAAAAJ&hl=en
+    homepage: https://sites.google.com/site/vasudev2020/
+    institution: University of Dublin, Trinity College
+    last_name: Nedumpozhimana
+    name: Vasudevan Nedumpozhimana
+    orcid: https://orcid.org/0000-0001-5161-8925
+    semantic_scholar_id: https://www.semanticscholar.org/author/Vasudevan-Nedumpozhimana/1468664761
+    username: ~Vasudevan_Nedumpozhimana1
+  decision: '2026'
+  file: 35.pdf
+  id: 35
+  openreview_id: fidMqMuIal
+  pdf_file: 890f1d07e0c0bd86bae4c537b2758e745075867e.pdf
+  title: 'When LLMs Annotate: Reliability Challenges in Low-Resource NLI'
+- abstract: 'Large language model (LLM) research and development has overwhelmingly
+    focused on the world''s major languages, leading to under-representation of low-resource
+    languages such as Irish. This paper introduces Qomhrá, a bilingual Irish and English
+    LLM, developed under extremely low-resource constraints. A complete pipeline is
+    outlined spanning bilingual continued pre-training, instruction tuning, and the
+    synthesis of human preference data for future alignment training. We focus on
+    the lack of scalable methods to create human preference data by proposing a novel
+    method to synthesise such data by prompting an LLM to generate "accepted" and
+    "rejected" responses, which we validate as aligning with L1 Irish speakers.
+
+    To select an LLM for synthesis, we evaluate the top closed-weight LLMs for Irish
+    language generation performance. Gemini-2.5-Pro is ranked highest by L1 and L2
+    Irish-speakers, diverging from LLM-as-a-judge ratings, indicating a misalignment
+    between current LLMs and the Irish-language community. Subsequently, we leverage
+    Gemini-2.5-Pro to translate a large scale English-language instruction tuning
+    dataset to Irish and to synthesise a first-of-its-kind Irish-language human preference
+    dataset. We comprehensively evaluate Qomhrá across several benchmarks, testing
+    translation, gender understanding, topic identification, and world knowledge;
+    these evaluations show gains of up to 29\% in Irish and 44\% in English compared
+    to the existing open-source Irish LLM baseline, UCCIX. The results of our framework
+    provide insight and guidance to developing LLMs for both Irish and other low-resource
+    languages.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@qub.ac.uk'
+    first_name: Joseph
+    last_name: McInerney
+    name: Joseph McInerney
+    username: ~Joseph_McInerney1
+  - dblp_id: https://dblp.org/pid/359/3793
+    emails: '****@umail.ucc.ie'
+    first_name: Khanh-Tung
+    google_scholar_id: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=6f-uYuYAAAAJ
+    institution: University College Cork
+    last_name: Tran
+    name: Khanh-Tung Tran
+    semantic_scholar_id: https://www.semanticscholar.org/author/Khanh-Tung-Tran/2230079907
+    username: ~Khanh-Tung_Tran1
+  - emails: '****@tcd.ie'
+    first_name: Liam
+    google_scholar_id: https://scholar.google.com/citations?user=NyD6JnIAAAAJ&hl=en
+    last_name: Lonergan
+    name: Liam Lonergan
+    orcid: https://orcid.org/0000-0002-6541-6539
+    username: ~Liam_Lonergan1
+  - emails: '****@tcd.ie'
+    first_name: Neasa
+    homepage: https://www.abair.ie
+    institution: University of Dublin, Trinity College
+    last_name: Ní Chiaráin
+    name: Neasa Ní Chiaráin
+    orcid: https://orcid.org/0000-0002-4669-5667
+    username: ~Neasa_Ní_Chiaráin1
+  - emails: '****@tcd.ie'
+    first_name: Ailbhe
+    homepage: https://www.tcd.ie/slscs/staff/anichsid
+    institution: University of Dublin, Trinity College
+    last_name: Ni Chasaide
+    name: Ailbhe Ni Chasaide
+    username: ~Ailbhe_Ni_Chasaide1
+  - dblp_id: https://dblp.org/pid/97/4572
+    emails: '****@qub.ac.uk'
+    first_name: Barry
+    google_scholar_id: https://scholar.google.co.uk/citations?user=AuyNOI4AAAAJ&
+    homepage: https://pure.qub.ac.uk/en/persons/barry-devereux
+    institution: Queen's University Belfast
+    last_name: Devereux
+    name: Barry Devereux
+    orcid: https://orcid.org/0000-0003-2128-8632
+    semantic_scholar_id: https://www.semanticscholar.org/author/Barry-Devereux/
+    username: ~Barry_Devereux1
+  decision: '2026'
+  file: 37.pdf
+  id: 37
+  openreview_id: fWOuf8WmEE
+  pdf_file: 4bb9ae3d393dd2c48845eee7ef71958944e6fb97.pdf
+  title: 'Qomhrá: A Bilingual Irish and English Large Language Model'
+- abstract: 'Adapting large language models (LLMs) for machine translation has shown
+    strong performance in low-resource languages; however, their effectiveness for
+    \emph{unseen, extremely low-resource languages} remains largely unexplored. We
+    present \textbf{NupeMT-QLoRA}, a curriculum-based adaptation framework for the
+    Nupe--English language pair. Our approach employs a two-stage QLoRA fine-tuning
+    strategy: (i) initial training on 34k noisy parallel sentence pairs, followed
+    by (ii) continued fine-tuning on a smaller, cleaner set of 12k bidirectional parallel
+    sentences with explicit translation-direction tags. This staged curriculum stabilizes
+    optimization and improves robustness under severe data scarcity.We further identify
+    a reliability crisis in existing automatic evaluation metrics for unseen languages.
+    Popular LLM-based judges such as GEMBA and xCOMET exhibit weak correlation with
+    human judgments (Kendall’s $\tau \approx 0.21$) and low inter-rater reliability
+    (Fleiss’ $\kappa \approx 0.27$), largely due to fluency bias. To address this,
+    we propose \textbf{Ref-Anchor-MQM}, a reference-anchored evaluation protocol that
+    forces the judge to extract Key Semantic Units from a human reference before scoring.Experimental
+    results show that NupeMT-QLoRA substantially outperforms NLLB-200, improving chrF++
+    from 22.73 to 41.10, while Ref-Anchor-MQM achieves significantly higher alignment
+    with human evaluation ($\tau = 0.71$). Our framework provides a scalable pipeline
+    for adapting and evaluating LLMs on languages with zero prior representation.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@st.futminna.edu.ng'
+    first_name: Umar
+    institution: Federal University of Technology Minna
+    last_name: Umar
+    middle_name: Baba
+    name: Umar Baba Umar
+    username: ~Umar_Baba_Umar1
+  - emails: '****@futminna.edu.ng'
+    first_name: Sulaimon
+    last_name: Bashir
+    middle_name: Adebayo
+    name: SULAIMON ADEBAYO BASHIR
+    username: ~SULAIMON_ADEBAYO_BASHIR1
+  - emails: '****@futminna.edu.ng'
+    first_name: Abdulmalik
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=YJBmRvkAAAAJ
+    institution: Federal University of Technology, Minna
+    last_name: Mohammed
+    middle_name: Danlami
+    name: Abdulmalik Danlami Mohammed
+    orcid: https://orcid.org/0000-0002-0217-7411
+    username: ~Abdulmalik_Danlami_Mohammed1
+  decision: '2026'
+  file: 38.pdf
+  id: 38
+  openreview_id: F7Ew5tzoRz
+  pdf_file: a99169ec29be8b456e807396f4e53dc5be0b5920.pdf
+  title: 'Anchoring the Judge: Curriculum-Based Adaptation and Reference-Anchored
+    MQM for LLM-Based Machine Translation of an Unseen Low-Resource Language - A Case
+    of Nupe'
+- abstract: Large Language Models (LLMs) excel on English reasoning tasks but falter
+    on morphologically rich, low-resource languages such as Telugu, Tamil, and Kannada.
+    We present TeluguEval, a human-curated reasoning benchmark created by translating
+    GSM8K (math), Winogrande (commonsense), ARC (science), CaseHOLD (law), and Hendrycks
+    Ethics into Telugu. We evaluate eight models spanning global (Llama-3.1-8B, Llama-2-7B,
+    Qwen-8B, Gemma-7B, Gemini-2.0) and regional (Telugu-Llama2-7B, Indic-Gemma-7B,
+    Sarvam-m-24B) systems. While extremely strong models such as Gemini and Sarvam-m
+    largely retain performance in Telugu, most English-centric models suffer severe
+    accuracy drops, often exceeding 30 to 40 points, particularly on mathematical
+    and scientific reasoning. We further observe systematic failure modes including
+    script sensitivity, option-selection bias, repetition loops, and unintended code-switching.
+    Our results demonstrate that surface-level Telugu fluency does not imply robust
+    reasoning capability, underscoring the need for Telugu-specific data, tokenization,
+    and pretraining. TeluguEval provides a standardized testbed to drive progress
+    on reasoning in low-resource Indian languages.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@research.iiit.ac.in'
+    first_name: Revanth
+    google_scholar_id: https://scholar.google.com/citations?user=HxjBwMQAAAAJ&hl=en
+    last_name: Gundam
+    middle_name: Kumar
+    name: Revanth Kumar Gundam
+    username: ~Revanth_Kumar_Gundam1
+  - dblp_id: https://dblp.org/pid/134/6779.html
+    emails: '****@iiit.ac.in'
+    first_name: Radhika
+    google_scholar_id: https://scholar.google.com.tw/citations?user=DsIpZR0AAAAJ
+    homepage: https://www.iiit.ac.in/people/faculty/radhikamamidi/
+    institution: International Institute of Information Technology Hyderabad
+    last_name: Mamidi
+    name: Radhika Mamidi
+    orcid: https://orcid.org/0000-0003-0171-0816
+    semantic_scholar_id: https://www.semanticscholar.org/author/R.-Mamidi/1829635
+    username: ~Radhika_Mamidi1
+  decision: '2026'
+  file: 39.pdf
+  id: 39
+  openreview_id: RE7mNqRxNX
+  pdf_file: c3ef306ad72c8215778f5f8b8f25b131a40922e8.pdf
+  title: 'TeluguEval: A Comprehensive Benchmark for Evaluating LLM Capabilities in
+    Telugu'
+- abstract: Cross-Lingual Emotion Recognition (CLER) remains a formidable challenge
+    for ultra-low-resource languages like Balinese due to the scarcity of high-quality
+    annotated data and the performance limitations of traditional multilingual models.
+    This study addresses these gaps through two primary contributions. First, we present
+    a newly created multi-label Balinese emotion dataset annotated by a panel of experts
+    in Balinese linguistics and psychology. Second, we propose the Multi-Agent Peer
+    Collaboration (MAPC) framework, which transforms the multi-label classification
+    problem into a series of independent binary tasks to leverage the collaborative
+    reasoning of Large Language Models (LLMs). We evaluated the framework against
+    the LaBSE multilingual model and three LLMs of varying scales under zero-shot
+    and few-shot settings using the Macro-F1 measure. The experimental results showed
+    that LLMs significantly outperform traditional Pre-trained Language Models (PLMs).
+    MAPC achieved an overall macro $F_1$-score of $63.95$, which was higher than the
+    individual baselines in both zero-shot and few-shot settings. Analysis shows that
+    while some models exhibit sensitivity to few-shot prompting in low-resource contexts,
+    the MAPC review and revision process consistently improves individual reasoning
+    and provides a more accurate final classification.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@rug.nl'
+    first_name: Putu
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=FnmXKc0AAAAJ
+    institution: University of Groningen
+    last_name: Utama
+    middle_name: Kussa Laksana
+    name: Putu Kussa Laksana Utama
+    orcid: https://orcid.org/0000-0002-7074-9338
+    username: ~Putu_Kussa_Laksana_Utama1
+  - dblp_id: https://dblp.org/pid/219/0966
+    emails: '****@rug.nl'
+    first_name: Tsegaye
+    google_scholar_id: https://scholar.google.co.uk/citations?user=PtsMPscAAAAJ&hl=en
+    institution: University of Groningen
+    last_name: Tashu
+    middle_name: Misikir
+    name: Tsegaye Misikir Tashu
+    orcid: https://orcid.org/0000-0002-4498-2486
+    username: ~Tsegaye_Misikir_Tashu1
+  - dblp_id: https://dblp.org/pid/52/7118
+    emails: '****@rug.nl'
+    first_name: Jilles
+    google_scholar_id: https://scholar.google.fr/citations?user=iQ3v57QAAAAJ&hl=fr
+    homepage: http://dibangoye.fr
+    institution: University of Groningen and INSA de Lyon
+    last_name: Dibangoye
+    middle_name: Steeve
+    name: Jilles Steeve Dibangoye
+    username: ~Jilles_Steeve_Dibangoye1
+  decision: '2026'
+  file: 41.pdf
+  id: 41
+  openreview_id: kQMidtI0l3
+  pdf_file: 2e66f7d1c8832c46cf11c7c2a553e7a168ebafd1.pdf
+  title: Cross-Lingual Emotion Recognition in Balinese Text using Multilingual-LLMs
+    under Peer-Collaborations Settings
+- abstract: While Large Language Models (LLMs) excel in high-resource contexts, reasoning
+    capabilities in low-resource languages (LRLs) like Sindhi remain limited. To bridge
+    this gap, we introduce Sindhi-Reasoning-Instruct, the first culturally grounded
+    Sindhi instruction corpus. We fine-tuned six LLaMA and Mistral models (1B–24B)
+    to evaluate if parameter-efficient tuning enables deductive, inductive, and causal
+    reasoning. Results demonstrate that linguistically authentic data is the decisive
+    factor. Fine-tuning effectively restored Sindhi’s Perso-Arabic orthography and
+    SOV structure, with the Mistral-Small-24B model achieving a massive 141% relative
+    improvement in human quality ratings over its base version. Furthermore, structured
+    reasoning capabilities were found to scale with model size; while smaller models
+    achieved high fluency, Mistral-Small-24B achieved top performance across logical
+    categories, reaching 83% on inductive reasoning tasks. This study provides empirical
+    evidence that expert-curated, native instruction data allows LRL models to move
+    beyond simple translation toward robust, structured reasoning. The dataset and
+    models are publicly available.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@student.unisi.it'
+    first_name: Mehak
+    last_name: Mehak
+    name: Mehak Mehak
+    orcid: https://orcid.org/0009-0003-2194-1678
+    username: ~Mehak_Mehak2
+  - emails: '****@unisi.it'
+    first_name: Kamyar
+    google_scholar_id: https://scholar.google.com/citations?user=RewxhZwAAAAJ&hl=en
+    homepage: https://sailab.diism.unisi.it/people/kamyar-zeinalipour/
+    last_name: Zeinalipour
+    name: Kamyar Zeinalipour
+    username: ~Kamyar_Zeinalipour1
+  - emails: '****@students.muet.edu.pk'
+    first_name: Pireh
+    last_name: Soomro
+    name: Pireh Soomro
+    username: ~Pireh_Soomro1
+  - dblp_id: https://dblp.org/pid/90/4878
+    emails: '****@iusspavia.it'
+    first_name: Cristiano
+    homepage: https://www.nets.iusspavia.it/people/chesi.php
+    institution: Istituto Universitario di Studi Superiori
+    last_name: Chesi
+    name: Cristiano Chesi
+    orcid: https://orcid.org/0000-0003-1935-1348
+    semantic_scholar_id: https://www.semanticscholar.org/author/Cristiano-Chesi/3007700
+    username: ~Cristiano_Chesi1
+  - dblp_id: https://dblp.org/pid/g/MarcoGori
+    emails: '****@gmail.com'
+    first_name: Marco
+    google_scholar_id: https://scholar.google.it/citations?user=wBMRRk0AAAAJ&hl=en&oi=ao
+    homepage: http://sailab.diism.unisi.it/people/marco-gori/
+    institution: University of Siena
+    last_name: Gori
+    name: Marco Gori
+    orcid: https://orcid.org/0000-0001-6337-5430
+    semantic_scholar_id: https://www.semanticscholar.org/search?q=marco%20gori&sort=relevance
+    username: ~Marco_Gori1
+  - dblp_id: https://dblp.org/pid/59/1233
+    emails: '****@unisi.it'
+    first_name: Marco
+    google_scholar_id: https://scholar.google.com/citations?user=kZFskCoAAAAJ
+    homepage: http://sailab.diism.unisi.it/people/marco-maggini/
+    last_name: Maggini
+    name: Marco Maggini
+    orcid: https://orcid.org/0000-0002-6428-1265
+    semantic_scholar_id: https://www.semanticscholar.org/author/Marco-Maggini/2252375458
+    username: ~Marco_Maggini1
+  decision: '2026'
+  file: 42.pdf
+  id: 42
+  openreview_id: onCcTD4B9o
+  pdf_file: 6902be5c082665d4709e08b09023567ec856c889.pdf
+  title: Enabling Structured Reasoning in Sindhi with Culturally Grounded Instruction
+    Tuning
+- abstract: This paper evaluates the performance of transformer-based language models
+    on split-ergative case alignment in Georgian, a particularly rare system for assigning
+    grammatical cases to mark argument roles. We focus on subject and object marking
+    determined through various permutations of nominative, ergative, and dative noun
+    forms. A treebank-based approach for the generation of minimal pairs using the
+    Grew query language is implemented. We create a dataset of 370 syntactic tests
+    made up of seven tasks containing 50-70 samples each, where three noun forms are
+    tested in any given sample. Five encoder- and two decoder-only models are evaluated
+    with word- and/or sentence-level accuracy metrics. Regardless of the specific
+    syntactic makeup, models performed worst in assigning the ergative case correctly
+    and strongest in assigning the nominative case correctly. Performance correlated
+    with the overall frequency distribution of the three forms (NOM > DAT > ERG).
+    Though data scarcity is a known issue for low-resource languages, we show that
+    the highly specific role of the ergative along with a lack of available training
+    data likely contributes to poor performance on this case. The dataset is made
+    publicly available and the methodology provides an interesting avenue for future
+    syntactic evaluations of languages where benchmarks are limited.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Daniel
+    google_scholar_id: https://scholar.google.com/citations?user=X10pMzAAAAAJ
+    homepage: https://danielgall500.github.io/
+    institution: Institute for Applied Informatics
+    last_name: Gallagher
+    name: Daniel Gallagher
+    orcid: https://orcid.org/0000-0001-8103-949X
+    username: ~Daniel_Gallagher3
+  - dblp_id: https://dblp.org/pid/24/3267
+    emails: '****@informatik.uni-leipzig.de'
+    first_name: Gerhard
+    google_scholar_id: https://scholar.google.com/citations?user=Q1yST2AAAAAJ&hl=en
+    homepage: https://fob.uni-leipzig.de/public/person/p-2018-5876/publikation
+    institution: Universität Leipzig
+    last_name: Heyer
+    name: Gerhard Heyer
+    orcid: https://orcid.org/0000-0002-0442-392X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Gerhard-Heyer/2013643
+    username: ~Gerhard_Heyer2
+  decision: '2026'
+  file: 43.pdf
+  id: 43
+  openreview_id: xY1JPzgsU6
+  pdf_file: 4cbd39c6aa76e6114fcb94675f4d5d250130169e.pdf
+  title: Targeted Syntactic Evaluation of Language Models on Georgian Case Alignment
+- abstract: 'Language models have recently gained significant attention in natural
+    language processing, showing strong performance across a wide range of tasks such
+    as text classification, text generation, language modeling, and question answering
+    (Q&A). Despite these advances, one of the most critical challenges faced by language
+    models is hallucination — the generation of fluent and plausible responses that
+    are factually incorrect or fabricated. This study presents preliminary work on
+    analyzing hallucinations in Q&A tasks for low-resource languages. We evaluate
+    model performance on the Mpox-Myanmar and SynDARin datasets using three API-accessible
+    models: LLaMA 3.1 70B, LLaMA 3.1 8B, and Gemini 2.5 — and two monolingual language
+    models: HyGPT 10B for Armenian and SeaLLM for Burmese. Our work contributes by
+    systematically examining hallucinations through quantitative analysis using Natural
+    Language Inference and Semantic Similarity metrics across different model sizes
+    and prompting strategies, as well as qualitative analysis through human verification.
+    We further investigate whether common assumptions about model behavior hold consistently
+    and provide explanations for the observed patterns.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@iiitm.ac.in'
+    first_name: Kushal
+    last_name: Trivedi
+    name: Kushal Trivedi
+    username: ~Kushal_Trivedi1
+  - emails: '****@iiitm.ac.in'
+    first_name: Murtuza
+    last_name: Shaikh
+    name: Murtuza Shaikh
+    username: ~Murtuza_Shaikh1
+  - emails: '****@bmsce.ac.in'
+    first_name: Sriyansh
+    homepage: https://www.linkedin.com/in/sriyansh-sharma-57b499208/
+    last_name: Sharma
+    name: Sriyansh Sharma
+    username: ~Sriyansh_Sharma1
+  decision: '2026'
+  file: 46.pdf
+  id: 46
+  openreview_id: TLoIN6JTp6
+  pdf_file: fa21aa7535dd93a557bc4357aa202a55e9cbb262.pdf
+  title: '"So, How Much Do LLMs Hallucinate on Low-Resource Languages?" A Quantitative
+    and Qualitative Analysis'
+- abstract: Automatic Speech Recognition (ASR) systems are gaining increasing attention
+    in both academia and industry. Despite having remarkable performance in high-resource
+    languages, their efficacy is less pronounced in low-resource settings. We present
+    the first ASR system for Sukuma, one of the most severely under-resourced Tanzanian
+    languages, and provide an open-source Sukuma speech corpus comprising 7.47 hours
+    of carefully transcribed audio. The data, sourced primarily from Bible readings,
+    was rigorously annotated to ensure phonetic and orthographic consistency, making
+    it the most linguistically reliable resource currently available for the Sukuma
+    language. To establish baselines, we train lightweight ASR and Text-to-Speech
+    (TTS) models that demonstrate the feasibility of building end-to-end speech systems
+    for this underrepresented language. This work addresses the challenges of developing
+    language and communication tools for speakers of less-represented languages, particularly
+    the scarcity of representative datasets and benchmarks, and highlights future
+    research directions for linguistically challenging languages, such as Sukuma.
+    We make our data and code publicly available to facilitate reproducibility and
+    further research.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/402/6721.html
+    emails: '****@brown.edu'
+    first_name: Macton
+    google_scholar_id: https://scholar.google.com/citations?user=y6KKlnQAAAAJ&hl=en
+    last_name: Mgonzo
+    name: Macton Mgonzo
+    orcid: https://orcid.org/0000-0001-7007-7490
+    semantic_scholar_id: https://www.semanticscholar.org/author/Macton-Mgonzo/2352942737
+    username: ~Macton_Mgonzo1
+  - dblp_id: https://dblp.org/pid/357/5707
+    emails: '****@nd.edu'
+    first_name: Kezia
+    google_scholar_id: https://scholar.google.com/citations?user=K_nWUeYAAAAJ&hl=en
+    last_name: Oketch
+    name: Kezia Oketch
+    orcid: https://orcid.org/0009-0000-1089-2530
+    semantic_scholar_id: https://www.semanticscholar.org/author/Kezia-Oketch/2246878049
+    username: ~Kezia_Oketch1
+  - emails: '****@gmail.com'
+    first_name: Naome
+    google_scholar_id: https://scholar.google.com/citations?user=86__xHEAAAAJ&hl=en&oi=ao
+    last_name: Etori
+    middle_name: A
+    name: Naome A Etori
+    semantic_scholar_id: https://www.semanticscholar.org/author/Naome-A.-Etori/1742219452
+    username: ~Naome_A_Etori1
+  - emails: '****@pawa-ai.com'
+    first_name: Winnie
+    institution: Pawa AI
+    last_name: Mang'eni
+    name: Winnie Mang'eni
+    username: ~Winnie_Mang'eni1
+  - emails: '****@pawa-ai.com'
+    first_name: Elizabeth
+    last_name: Nyaki
+    middle_name: Fabian
+    name: Elizabeth Fabian Nyaki
+    username: ~Elizabeth_Fabian_Nyaki1
+  - emails: '****@sartify.com'
+    first_name: Michael
+    google_scholar_id: https://scholar.google.co.uk/citations?user=hXnkc_IAAAAJ&hl=en
+    last_name: Mollel
+    middle_name: Samwel
+    name: Michael Samwel Mollel
+    username: ~Michael_Samwel_Mollel1
+  decision: '2026'
+  file: 47.pdf
+  id: 47
+  openreview_id: 5eVsYTZOd7
+  pdf_file: 853b5b1af7399c317c547257afd7d4f9e7ac80ef.pdf
+  title: 'Learning from Scarcity: Building and Benchmarking Speech Technology for
+    Sukuma.'
+- abstract: 'Transformer-based language models, despite their widespread use, remain
+    mostly unavailable for low-resourced languages (LRLs), due to their lack of texts
+    for pre-training. While solutions have emerged to remedy this, they still almost
+    exclusively rely on raw text corpora, which may be almost non-existent for some
+    languages. A recent line of work has attempted to circumvent this by replacing
+    these with linguistics-based materials, such as grammars, to adapt LRLs to these
+    models. However, many approaches tend to work with languages that are typologically
+    very distant to each other.
+
+    In this work we investigate whether adapting closely related languages, belonging
+    to the same family, with linguistics-based data can facilitate this process. For
+    this, we look into the adaptation of two Spanish-based Transformer encoders --a
+    monolingual and multilingual models-- to Aragonese, a low-resourced Romance language
+    spoken in Northern Spain, with whom it shares similar syntax but differing lexical
+    and morphological phenomena. We rely on several knowledge injection methods, with
+    which we report results, for a monolingual model, above some baselines in a set
+    of Natural Language Understanding (NLU) benchmarks, proving the efficiency of
+    relying on linguistics materials –or combined with a small amount of text– when
+    languages belong to the same family.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@unizar.es'
+    first_name: Miguel
+    google_scholar_id: https://scholar.google.com/citations?user=d0Dkmu4AAAAJ&hl
+    last_name: López-Otal
+    name: Miguel López-Otal
+    orcid: https://orcid.org/0000-0002-4854-8062
+    username: ~Miguel_López-Otal1
+  - dblp_id: https://dblp.org/pid/07/8173
+    emails: '****@unizar.es'
+    first_name: Jorge
+    google_scholar_id: https://scholar.google.es/citations?user=6oqGHuIAAAAJ&hl
+    homepage: http://jogracia.url.ph/web/
+    institution: University of Zaragoza
+    last_name: Gracia
+    name: Jorge Gracia
+    orcid: https://orcid.org/0000-0001-6452-7627
+    semantic_scholar_id: https://www.semanticscholar.org/author/J.-Gracia/143708147
+    username: ~Jorge_Gracia1
+  decision: '2026'
+  file: 48.pdf
+  id: 48
+  openreview_id: fcz2H2SDYm
+  pdf_file: 621e8a83def7230eb7c9ed1ecab1de194dca8c25.pdf
+  title: '"We Are (Language) Family'''': Adapting Transformer models to related minority
+    languages with linguistic data'
+- abstract: Large language models (LLMs) have shown remarkable performance when prompted
+    to reason step by step, commonly referred to as chain-of-thought (CoT) reasoning.
+    While prior work has proposed mechanism-level approaches to evaluate CoT faithfulness,
+    these studies have primarily focused on English, leaving low-resource languages
+    such as Persian largely underexplored. In this paper, we present the first comprehensive
+    study of CoT faithfulness in Persian. Our analysis spans 15 classification datasets
+    and 6 language models across three classes (small, large, and reasoning models)
+    evaluated under both English and Persian prompting conditions. We first assess
+    model performance on each dataset while collecting the corresponding CoT traces
+    and final predictions. We then evaluate the faithfulness of these CoT traces using
+    an LLM-as-a-judge approach, followed by a human evaluation to measure agreement
+    between the LLM-based judge and human annotator. Our results reveal substantial
+    variation in CoT faithfulness across tasks, datasets, and model classes. In particular,
+    faithfulness is strongly influenced by the dataset and the language model class,
+    while the language used for prompting has a comparatively smaller effect. Notably,
+    small language models exhibit lower or comparable faithfulness scores than large
+    language models and reasoning models.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/263/3504
+    emails: '****@dfki.de'
+    first_name: Shakib
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=afvFKdwAAAAJ
+    institution: German Research Center for AI
+    last_name: Yazdani
+    name: Shakib Yazdani
+    username: ~Shakib_Yazdani2
+  - dblp_id: https://dblp.org/pid/59/7935
+    emails: '****@gmail.com'
+    first_name: Cristina
+    homepage: https://www.cs.upc.edu/~cristinae/CV/cv.php
+    institution: Barcelona Supercomputing Center and German Research Center for AI
+    last_name: España-Bonet
+    name: Cristina España-Bonet
+    orcid: https://orcid.org/0000-0001-5414-4710
+    username: ~Cristina_España-Bonet1
+  - dblp_id: https://dblp.org/pid/48/8160
+    emails: '****@dfki.de'
+    first_name: Eleftherios
+    google_scholar_id: https://scholar.google.gr/citations?user=HhcsbYgAAAAJ&hl=en
+    homepage: https://www.dfki.de/~elav01/
+    institution: alangu GmbH, Technische Universität Berlin and German Research Center
+      for AI
+    last_name: Avramidis
+    name: Eleftherios Avramidis
+    orcid: https://orcid.org/0000-0002-5671-573X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Eleftherios-Avramidis/2837687
+    username: ~Eleftherios_Avramidis1
+  - emails: '****@gmail.com'
+    first_name: Yasser
+    last_name: Hamidullah
+    name: Yasser HAMIDULLAH
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yasser-Hamidullah/2123124650
+    username: ~Yasser_HAMIDULLAH1
+  - dblp_id: https://dblp.org/pid/82/3447
+    emails: '****@dfki.de'
+    first_name: Josef
+    google_scholar_id: https://scholar.google.com/citations?user=rl8S6a8AAAAJ&hl=en
+    last_name: Genabith
+    middle_name: Van
+    name: Josef van Genabith
+    semantic_scholar_id: https://www.semanticscholar.org/author/Josef-van-Genabith/7519068
+    username: ~Josef_van_Genabith1
+  decision: '2026'
+  file: 49.pdf
+  id: 49
+  openreview_id: 07iaL5VHZe
+  pdf_file: 0656471c66ca04a4d44eb28789fa4ba07fd25972.pdf
+  title: A Comprehensive Evaluation of Chain-of-Thought Faithfulness in Persian Classification
+    Tasks
+- abstract: 'Low-resource languages pose persistent challenges for Natural Language
+    Processing tasks such as lemmatization and part-of-speech (POS) tagging. This
+    paper investigates the capacity of recent large language models (LLMs), including
+    GPT-4 variants and open-weight Mistral models, to address these tasks in few-shot
+    and zero-shot settings for four historically and linguistically diverse under-resourced
+    languages: Ancient Greek, Classical Armenian, Old Georgian, and Syriac. Using
+    a novel benchmark comprising aligned training and out-of-domain test corpora,
+    we evaluate the performance of foundation models across lemmatization and POS-tagging,
+    and compare them with PIE, a task-specific RNN baseline. Our results demonstrate
+    that LLMs, even without fine-tuning, achieve competitive or superior performance
+    in POS-tagging and lemmatization across most languages in few-shot settings. Significant
+    challenges persist for languages characterized by complex morphology and non-Latin
+    scripts, but we demonstrate that LLMs are a credible and relevant option for initiating
+    linguistic annotation tasks in the absence of data, serving as an effective aid
+    for annotation.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@lipn.univ-paris13.fr'
+    first_name: Chahan
+    institution: University Paris 13, Université Paris Nord (Paris XIII) and École
+      Pratique des Hautes Études
+    last_name: Vidal-Gorène
+    name: Chahan Vidal-Gorène
+    orcid: https://orcid.org/0000-0003-1567-6508
+    username: ~Chahan_Vidal-Gorène1
+  - emails: '****@uclouvain.be'
+    first_name: Bastien
+    institution: INCAL
+    last_name: Kindt
+    name: Bastien Kindt
+    username: ~Bastien_Kindt1
+  - dblp_id: https://dblp.org/pid/249/2543
+    emails: '****@gmail.com'
+    first_name: Florian
+    google_scholar_id: https://scholar.google.com/citations?user=LmUCuI8AAAAJ&hl=fr&oi=ao
+    homepage: https://sites.google.com/view/florian-cafiero
+    institution: Graduate Institute - Geneva and PSL
+    last_name: Cafiero
+    name: Florian CAFIERO
+    orcid: https://orcid.org/0000-0002-1951-6942
+    username: ~Florian_CAFIERO1
+  decision: '2026'
+  file: 50.pdf
+  id: 50
+  openreview_id: B0wlEaIgDg
+  pdf_file: 201e5b95c85c119a41193cee206ec63c997ecf38.pdf
+  title: 'Under-resourced studies of under-resourced languages: lemmatization and
+    POS-tagging with LLM annotators for historical Armenian, Georgian, Greek and Syriac'
+- abstract: Large Language Models (LLMs) have remarkable capabilities across NLP tasks.
+    However, their performance in multilingual contexts, especially within the mental
+    health domain, has not been thoroughly explored. In this paper, we evaluate proprietary
+    and open-source LLMs on eight mental health datasets in various languages, as
+    well as their machine-translated (MT) counterparts. We compare LLM performance
+    in zero-shot, few-shot, and fine-tuned settings against conventional NLP baselines
+    that do not employ LLMs. In addition, we assess translation quality across language
+    families and typologies to understand its influence on LLM performance. Proprietary
+    LLMs and fine-tuned open-source LLMs achieve competitive F1 scores on several
+    datasets, often surpassing state-of-the-art results. However, performance on MT
+    data is generally lower, and the extent of this decline varies by language and
+    typology. This variation highlights both the strengths of LLMs in handling mental
+    health tasks in languages other than English and their limitations when translation
+    quality introduces structural or lexical mismatches.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/241/6890
+    emails: '****@gmu.edu'
+    first_name: Nishat
+    google_scholar_id: https://scholar.google.com/citations?user=pufsZewAAAAJ&hl=en&oi=ao
+    homepage: https://md-nishat.com/
+    last_name: Raihan
+    name: Nishat Raihan
+    orcid: https://orcid.org/0000-0001-6242-398X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Md.-Nishat-Raihan/79612971
+    username: ~Nishat_Raihan1
+  - dblp_id: https://dblp.org/pid/361/7126
+    emails: '****@gmu.edu'
+    first_name: Sadiya Sayara Chowdhury
+    google_scholar_id: https://scholar.google.com/citations?user=-BDt9hoAAAAJ&hl=en&oi=ao
+    institution: George Mason University
+    last_name: Puspo
+    name: Sadiya Sayara Chowdhury Puspo
+    semantic_scholar_id: https://www.semanticscholar.org/author/Sadiya-Sayara-Chowdhury-Puspo/9400544
+    username: ~Sadiya_Sayara_Chowdhury_Puspo1
+  - dblp_id: https://dblp.org/pid/277/9534
+    emails: '****@drd.unibuc.ro'
+    first_name: Ana-Maria
+    google_scholar_id: https://scholar.google.com/citations?user=TQuQ5IAAAAAJ&hl=en
+    homepage: https://scholar.google.com/citations?user=TQuQ5IAAAAAJ&hl=en
+    institution: Universita della Svizzera Italiana
+    last_name: Bucur
+    name: Ana-Maria Bucur
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ana-Maria-Bucur/2007651543
+    username: ~Ana-Maria_Bucur1
+  - dblp_id: https://dblp.org/pid/164/3866
+    emails: '****@umn.edu'
+    first_name: Stevie
+    google_scholar_id: https://scholar.google.com/citations?user=Q_rTsewAAAAJ&hl=en
+    homepage: http://www.steviechancellor.com
+    institution: University of Minnesota - Twin Cities
+    last_name: Chancellor
+    name: Stevie Chancellor
+    username: ~Stevie_Chancellor1
+  - dblp_id: https://dblp.org/pid/47/7983
+    emails: '****@gmu.edu'
+    first_name: Marcos
+    google_scholar_id: https://scholar.google.com.au/citations?user=vAx7VsoAAAAJ
+    homepage: https://mzampieri.com/
+    institution: George Mason University
+    last_name: Zampieri
+    name: Marcos Zampieri
+    orcid: https://orcid.org/0000-0002-2346-3847
+    username: ~Marcos_Zampieri1
+  decision: '2026'
+  file: 51.pdf
+  id: 51
+  openreview_id: floIYTGl9t
+  pdf_file: 1fa83ef3558252c039e62607a415c561809cc0e5.pdf
+  title: 'Large Language Models for Mental Health: A Multilingual Evaluation'
+- abstract: We introduce Serbian SuperGLUE, a comprehensive benchmark for evaluating
+    natural language understanding in Serbian, adapted from the English SuperGLUE
+    benchmark. The benchmark comprises seven tasks spanning question answering, natural
+    language inference, and coreference resolution, created through a combination
+    of LLM-based translation with automatic post-editing and native data generation.
+    We evaluate seven encoder-based language models, including both Serbian-specific
+    (BERTić, Jerteh) and multilingual models (mmBERT, XLM-RoBERTa variants). Our results
+    reveal that multilingual models remain competitive with language-specific alternatives,
+    with mmBERT achieving the best performance on RTE (75.7\%) and XLM-R-BERTić leading
+    on BoolQ (82.0\%). We observe significant training variance on smaller datasets,
+    with standard deviations exceeding 10\% in some configurations, highlighting the
+    importance of multi-seed evaluation for low-resource benchmarking. We release
+    the benchmark, evaluation code, and model checkpoints to facilitate reproducible
+    research on South Slavic language understanding.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@uns.ac.rs'
+    first_name: Mitar
+    homepage: https://permitt.io
+    institution: University of Novi Sad
+    last_name: Perovic
+    name: Mitar Perovic
+    username: ~Mitar_Perovic1
+  - emails: '****@gmail.com'
+    first_name: Teodora
+    homepage: https://www.linkedin.com/in/teodora-mihajlov-607843194/
+    last_name: Mihajlov
+    name: Teodora Mihajlov
+    username: ~Teodora_Mihajlov1
+  decision: '2026'
+  file: 52.pdf
+  id: 52
+  openreview_id: dqiWr7RnhW
+  pdf_file: 69274da71b0d9ae61c8c0c212df69fa8479af907.pdf
+  title: 'Serbian SuperGLUE: Towards an Evaluation Benchmark for South Slavic Language
+    Models'
+- abstract: 'Low-resource languages (LRLs) often lack high-quality, large-scale datasets
+    for training effective text embedding models, hindering their application in tasks
+    like retrieval-augmented generation (RAG) and semantic search. In this work, we
+    challenge the prevailing assumption that effective semantic alignment requires
+    massive datasets or pristine, human-verified translations. Focusing on Armenian
+    (an LRL with a unique script), we introduce a cost-effective adaptation strategy
+    using small scale noisy synthetic data generated by translating English Reddit
+    title-body pairs with open-weights models. We establish a comprehensive evaluation
+    benchmark comprising existing datasets, translated data, and a manually curated
+    dataset. Our experiments reveal a surprising "Less is More" phenomenon: fine-tuning
+    a multilingual encoder (mE5) on just 10,000 noisy synthetic pairs yields 11-12\%
+    average improvements across the benchmark with a 20\%+ relative improvement in
+    retrieval performance, matching the performance of models trained on ~1 million
+    examples. Furthermore, we demonstrate that neither increasing data scale, improving
+    translation quality via state-of-the-art LLMs, nor diversifying data domains yields
+    significant gains over this minimal baseline. We validate the generalizability
+    of these findings on another LRL with a unique script. Our results suggest that
+    semantic alignment for LRLs saturates early and is highly robust to noise, democratizing
+    high-performance embedding creation for resource-constrained communities. We release
+    the model, data, and the benchmark \href{https://metric-ai-lab.github.io/less-is-more-embeddings/}{at
+    this https URL} to facilitate further research.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@metric.am'
+    first_name: Zaruhi
+    institution: Metric AI Lab
+    last_name: Navasardyan
+    name: Zaruhi Navasardyan
+    username: ~Zaruhi_Navasardyan1
+  - emails: bagratuni@metric.am
+    first_name: bagratuni@metric.am
+    institution: NA
+    last_name: bagratuni@metric.am
+    name: bagratuni@metric.am
+    username: bagratuni@metric.am
+  - emails: '****@edu.ysu.am'
+    first_name: Spartak
+    last_name: Bughdaryan
+    name: Spartak Bughdaryan
+    username: ~Spartak_Bughdaryan1
+  - emails: '****@metric.am'
+    first_name: Hrant
+    google_scholar_id: https://scholar.google.com/citations?user=tZmtwgsAAAAJ
+    homepage: https://hrantdavtyan.github.io
+    institution: Metric AI Lab
+    last_name: Davtyan
+    name: Hrant Davtyan
+    username: ~Hrant_Davtyan1
+  decision: '2026'
+  file: 53.pdf
+  id: 53
+  openreview_id: qEg2Q27BiD
+  pdf_file: cdcedf1c8745ebd3dcff34c6f5cc1c808c45b7a6.pdf
+  title: 'Less is More: Adapting Text Embeddings for Low-Resource Languages with Small
+    Scale Noisy Synthetic Data'
+- abstract: 'We present a systematic evaluation of large language models (LLMs) on
+    Lithuanian grammatical case marking, a task that has received little prior attention.
+    Lithuanian is a relatively low-resource language, with rich morphology and explicit
+    marking. To enable fine-grained syntactic and morphological assessment, we introduce
+    a novel dataset of 305 minimal sentence pairs contrasting correct and incorrect
+    case usage. Our results show that case marking is challenging for current models,
+    with overall accuracy ranging from 0.662 to 0.852. A monolingual Lithuanian LLM
+    consistently outperforms multilingual counterparts, highlighting the value of
+    language-specific training over model size. Performance varies across cases: genitive
+    and locative forms are generally better handled, while rarer constructions and
+    subtle functional distinctions remain difficult. The dataset and analysis provide
+    a resource for future work, supporting the development of more robust LLMs and
+    targeted evaluation benchmarks for morphologically rich, low-resource languages.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@student.uva.nl'
+    first_name: Urtė
+    last_name: Jakubauskaitė
+    name: Urtė Jakubauskaitė
+    username: ~Urtė_Jakubauskaitė1
+  - dblp_id: https://dblp.org/pid/192/0532
+    emails: '****@gmail.com'
+    first_name: Raquel
+    google_scholar_id: https://scholar.google.com/citations?user=De2WOCgAAAAJ
+    homepage: https://rgalhama.github.io/
+    institution: University of Amsterdam, University of Amsterdam
+    last_name: Alhama
+    middle_name: G.
+    name: Raquel G. Alhama
+    orcid: https://orcid.org/0000-0002-8573-6716
+    semantic_scholar_id: https://www.semanticscholar.org/author/Raquel-G.-Alhama/6855348
+    username: ~Raquel_G._Alhama1
+  decision: '2026'
+  file: 55.pdf
+  id: 55
+  openreview_id: E7bmwLah5e
+  pdf_file: 7a38ecd9e635596539dfb59303404dcbdd7412ad.pdf
+  title: Evaluating Large Language Models on Lithuanian Grammatical Cases
+- abstract: 'We examine how the capabilities of large language models (LLMs) have
+    evolved on eight Belarusian language tasks contributed in 2023 to OpenAI’s Evals
+    framework. We evaluate state-of-the-art models both on the original development
+    sets and newly created test sets. Results demonstrate significant but non-uniform
+    progress over this period: some tasks are almost saturated, while others show
+    minor improvement beyond trivial baselines. Error analysis shows that certain
+    challenges haven’t yet been addressed, e.g. misidentification of non-words as
+    legitimate vocabulary, or conversion from modern to classical orthography. We
+    release the datasets and the generated completions (https://doi.org/10.5281/zenodo.18163825).'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/411/4209.html
+    emails: '****@gmail.com'
+    first_name: Vladislav
+    homepage: https://sites.google.com/view/v-poritski
+    institution: unaffiliated
+    last_name: Poritski
+    name: Vladislav Poritski
+    username: ~Vladislav_Poritski1
+  - dblp_id: https://dblp.org/pid/411/4202.html
+    emails: '****@gmail.com'
+    first_name: Oksana
+    homepage: https://independent.academia.edu/OksanaVolchek
+    institution: Independent
+    last_name: Volchek
+    name: Oksana Volchek
+    username: ~Oksana_Volchek1
+  - dblp_id: https://dblp.org/pid/351/3637
+    emails: '****@fit.vut.cz'
+    first_name: Maksim
+    google_scholar_id: https://scholar.google.com/citations?user=UUNpx9gAAAAJ&hl=de&oi=ao
+    institution: Brno University of Technology
+    last_name: Aparovich
+    name: Maksim Aparovich
+    semantic_scholar_id: https://www.semanticscholar.org/author/Maksim-Aparovich/2221318438
+    username: ~Maksim_Aparovich1
+  - dblp_id: https://dblp.org/pid/411/4356
+    emails: '****@gmail.com'
+    first_name: Volha
+    google_scholar_id: https://scholar.google.com/citations?user=C5nf5XAAAAAJ&hl
+    institution: Independent
+    last_name: Harytskaya
+    name: Volha Harytskaya
+    username: ~Volha_Harytskaya1
+  - dblp_id: https://dblp.org/pid/45/6626
+    emails: '****@fit.vut.cz'
+    first_name: Pavel
+    institution: Brno University of Technology
+    last_name: Smrz
+    name: Pavel Smrz
+    username: ~Pavel_Smrz1
+  decision: '2026'
+  file: 57.pdf
+  id: 57
+  openreview_id: GBUIp9ANYK
+  pdf_file: 5f0ef02d0cf91dc911723429db3925c61e8e0107.pdf
+  title: Tracking the evolution of LLM capabilities for Belarusian with OpenAI Evals
+- abstract: 'Building machine translation (MT) systems for low-resource languages
+    is notably difficult due to the scarcity of high-quality data. Although Large
+    Language Models (LLMs) have improved MT system performance, adapting them to lesser-represented
+    languages remains challenging. In-context learning (ICL) may offer novel ways
+    to adapt LLMs for low-resource MT by conditioning models on demonstration at inference
+    time. In this study, we explore scaling low-resource machine translation ICL beyond
+    the few-shot setting to thousands of examples with long-context models. We scale
+    in-context token budget to 1M tokens and compare three types of training corpora
+    used as in-context supervision: monolingual unsupervised data, instruction-style
+    data, and parallel data (English--target and Indonesian--target). Our experiments
+    on Javanese and Sundanese show that gains from additional context saturate quickly
+    and can degrade near the maximum context window, with scaling behavior strongly
+    dependent on corpus type. Notably, some forms of monolingual supervision can be
+    competitive with parallel data, despite the latter offering additional supervision.
+    Overall, our results characterize the effective limits and corpus-type sensitivity
+    of long-context ICL for low-resource MT, highlighting that larger context windows
+    do not necessarily yield proportional quality gains.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Luis
+    homepage: https://www.luisfrentzen.com/
+    institution: National Taiwan University of Science and Technology and Academia
+      Sinica
+    last_name: Salim
+    middle_name: Frentzen
+    name: Luis Frentzen Salim
+    username: ~Luis_Frentzen_Salim1
+  - emails: '****@mail.ntust.edu.tw'
+    first_name: Esteban
+    homepage: https://github.com/estebancarlin
+    last_name: Carlin
+    name: Esteban Carlin
+    username: ~Esteban_Carlin1
+  - emails: '****@mail.ntust.edu.tw'
+    first_name: Alexandre
+    last_name: Morinvil
+    name: Alexandre Morinvil
+    username: ~Alexandre_Morinvil1
+  - dblp_id: https://dblp.org/pid/294/0314
+    emails: '****@gmail.com'
+    first_name: Xi
+    homepage: https://baridxiai.github.io
+    last_name: Ai
+    name: Xi Ai
+    orcid: https://orcid.org/0000-0002-4241-3837
+    semantic_scholar_id: https://www.semanticscholar.org/author/Xi-Ai/2101316388
+    username: ~Xi_Ai1
+  - dblp_id: https://dblp.org/pid/82/2054
+    emails: '****@iis.sinica.edu.tw'
+    first_name: Lun-Wei
+    google_scholar_id: https://scholar.google.com/citations?user=SzcLXlkAAAAJ&hl=en
+    homepage: http://www.lunweiku.com/
+    institution: Academia Sinica
+    last_name: Ku
+    name: Lun-Wei Ku
+    orcid: https://orcid.org/0000-0003-2691-5404
+    semantic_scholar_id: https://www.semanticscholar.org/author/Lun-Wei-Ku/1746959
+    username: ~Lun-Wei_Ku1
+  decision: '2026'
+  file: 58.pdf
+  id: 58
+  openreview_id: mFabOkPrbv
+  pdf_file: c1384dd024d3d682f2fadd763245714106bcc82c.pdf
+  title: 'Beyond Many-Shot Translation: Scaling In‑Context Demonstrations For Low‑Resource
+    Machine Translation'
+- abstract: Embedding models are a crucial to modern NLP. However, the creation of
+    the most effective models relies on carefully constructed supervised finetuning
+    data. For high resource languages, such as English, such datasets are readily
+    available. However, for hundreds of other languages, they are simply non-existent.
+    We investigate whether the advent of large language models can help to bridge
+    this gap. We test three different strategies for generating synthetic triplet
+    data used to optimising embedding models. These include in-context learning as
+    well as two novel approaches, leveraging adapter composition and cross lingual
+    finetuning of the LLM generator (XL-LoRA) respectively. We find that while in-context
+    learning still falls short of strong non-synthetic baselines, adapter composition
+    and XL-LoRA yield strong performance gains across a wide array of tasks and languages,
+    offering a clear scalable pathway to producing performant embedding models for
+    a wide variety of languages.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Merve
+    last_name: Basoz
+    name: Merve Basoz
+    username: ~Merve_Basoz1
+  - emails: '****@ed.ac.uk'
+    first_name: Andrew
+    institution: University of Edinburgh
+    last_name: Horne
+    name: Andrew Horne
+    username: ~Andrew_Horne2
+  - emails: '****@ed.ac.uk'
+    first_name: Mattia
+    google_scholar_id: https://scholar.google.com/citations?user=02E6E3EAAAAJ&hl=en
+    homepage: https://mopper97.github.io/
+    institution: University of Edinburgh, University of Edinburgh
+    last_name: Opper
+    name: Mattia Opper
+    username: ~Mattia_Opper1
+  decision: '2026'
+  file: 59.pdf
+  id: 59
+  openreview_id: qBHdjKjl9o
+  pdf_file: 969c6acee1c0325ae142c688f7acfedc00dfd197.pdf
+  title: Bootstrapping Embeddings for Low Resource Languages
+- abstract: 'Religiolects—language varieties shaped by re- ligious community identity—are
+    low-resource domains often overlooked within high-resource languages. We present
+    the Indo-Religiolect Corpus, the first large-scale dataset for In- donesian religious
+    language variation, con- taining 3 million sentences from over 100 institutional
+    websites representing Muslim, Catholic, and Protestant communities. Fine- tuning
+    IndoBERT demonstrates these religi- olects are computationally distinguishable:
+    Is- lamic Indonesian exhibits high distinctiveness (91.73%), while Catholic and
+    Protestant vari- eties share substantial lexical overlap yet retain detectable
+    shibboleths (86.41% and 86.64%). Our findings indicate a potential for represen-
+    tation collapse: models trained on majority- normative data may default to secular
+    or Muslim-dominant Indonesian, blurring distinct minority voices. We hypothesize
+    that these gaps plausibly translate into downstream fair- ness risks for applications
+    like content mod- eration and automated hiring. This corpus of- fers a template
+    for documenting sub-national varieties, advancing linguistic equity beyond “National
+    Language” benchmarks toward “No Language Variety Left Behind.”'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@georgetown.edu'
+    first_name: Dan
+    homepage: https://github.com/dansachs
+    institution: Fulbright / Universitas Gadjah Mada
+    last_name: Sachs
+    name: Dan Sachs
+    username: ~Dan_Sachs1
+  decision: '2026'
+  file: 60.pdf
+  id: 60
+  openreview_id: AtIvJFK4hr
+  pdf_file: 30ff19021f8452197d9e31fcb4901fbd900b0358.pdf
+  title: 'The Indonesian Religiolect Corpus: Data Curation for Muslim, Protestant,
+    and Catholic Language Varieties'
+- abstract: Large language models (LLMs) often underperform in zero-shot text classification
+    for low-resource, non-Latin languages due to script and tokenization mismatches.
+    We propose \emph{representation-aware prompting} for Marathi that augments the
+    original script with International Phonetic Alphabet (IPA) transcriptions, romanization,
+    or a repetition-based fallback when external converters are unavailable. Experiments
+    with two instruction-tuned LLMs on Marathi sentiment analysis and hate detection
+    show consistent gains over script-only prompting (up to +2.6 accuracy points).
+    We further find that the most effective augmentation is model-dependent, and that
+    combining all variants is not consistently beneficial, suggesting that concise,
+    targeted cues are preferable in zero-shot settings.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/178/4688
+    emails: '****@nict.go.jp'
+    first_name: Van-Hien
+    google_scholar_id: https://scholar.google.co.jp/citations?user=Pi48KT8AAAAJ&hl=en
+    institution: NICT
+    last_name: Tran
+    name: Van-Hien Tran
+    semantic_scholar_id: https://www.semanticscholar.org/author/Van-Hien-Tran/2845068
+    username: ~Van-Hien_Tran1
+  - dblp_id: https://dblp.org/pid/342/4940
+    emails: '****@gmail.com'
+    first_name: Huy
+    google_scholar_id: https://scholar.google.com.tw/citations?hl=vi&pli=1&user=Ad7qF-YAAAAJ
+    homepage: https://hienvuhuy.github.io/
+    institution: Nara Institute of Science and Technology, Japan
+    last_name: Vu
+    middle_name: Hien
+    name: Huy Hien Vu
+    orcid: https://orcid.org/0000-0002-5957-0345
+    semantic_scholar_id: https://www.semanticscholar.org/author/Huy-Hien-Vu/47980560
+    username: ~Huy_Hien_Vu1
+  - dblp_id: https://dblp.org/pid/55/3834
+    emails: '****@nict.go.jp'
+    first_name: Hideki
+    google_scholar_id: https://scholar.google.co.jp/citations?hl=ja&user=V72tg8UAAAAJ
+    homepage: https://www.nict.go.jp/en/index.html
+    institution: National Institute of Information and Communications Technology (NICT)
+    last_name: Tanaka
+    name: Hideki Tanaka
+    orcid: https://orcid.org/0009-0001-4498-7017
+    semantic_scholar_id: https://www.semanticscholar.org/author/Hideki-Tanaka/50426289
+    username: ~Hideki_Tanaka1
+  - dblp_id: https://dblp.org/pid/76/5745.html
+    emails: '****@nict.go.jp'
+    first_name: Masao
+    google_scholar_id: https://scholar.google.com/citations?user=artIO6gAAAAJ&hl=en&oi=ao
+    homepage: http://www2.nict.go.jp/astrec-att/member/mutiyama/
+    institution: National Institute of Information and Communications Technology (NICT),
+      National Institute of Advanced Industrial Science and Technology
+    last_name: Utiyama
+    name: Masao Utiyama
+    semantic_scholar_id: https://www.semanticscholar.org/author/M.-Utiyama/1802277
+    username: ~Masao_Utiyama2
+  decision: '2026'
+  file: 61.pdf
+  id: 61
+  openreview_id: 5TwO3cdvXO
+  pdf_file: ae9c7955ee6d9efc337fc3dbf3afd85bccb33235.pdf
+  title: 'Representation-Aware Prompting for Zero-Shot Marathi Text Classification:
+    IPA, Romanization, Repetition'
+- abstract: Natural Language Understanding (NLU) for low-resource languages remains
+    a major challenge in NLP due to the scarcity of high-quality data and language-specific
+    models. Maithili, despite being spoken by millions, lacks adequate computational
+    resources, limiting its inclusion in digital and AI-driven applications. To address
+    this gap, we introduce maiBERT, a BERT-based language model pre-trained specifically
+    for Maithili using the Masked Language Modeling (MLM) technique. Our model is
+    trained on a newly constructed Maithili corpus and evaluated through a news classification
+    task. In our experiments, maiBERT achieved an accuracy of 87.02%, outperforming
+    existing regional models like NepBERTa and HindiBERT, with a 0.13% overall accuracy
+    gain and 5–7% improvement across various classes. We have open-sourced maiBERT
+    on Hugging Face, enabling further fine-tuning for downstream tasks such as sentiment
+    analysis and Named Entity Recognition (NER).
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@pcampus.edu.np'
+    first_name: Sumit
+    google_scholar_id: https://scholar.google.com/citations?user=ag74ytsAAAAJ&hl=en
+    homepage: https://sumityadav.com.np
+    last_name: Yadav
+    name: Sumit Yadav
+    username: ~Sumit_Yadav1
+  - emails: '****@pcampus.edu.np'
+    first_name: Raju
+    homepage: https://www.linkedin.com/in/adhikariraju38/
+    last_name: Yadav
+    middle_name: Kumar
+    name: Raju Kumar Yadav
+    username: ~Raju_Kumar_Yadav1
+  - emails: '****@mq.edu.au'
+    first_name: Utsav
+    google_scholar_id: https://scholar.google.com/citations?view_op=list_works&hl=en&user=NeR5aJUAAAAJ&gmla=ALUCkoUprAf0-7rk4DZUTBimJjbpMTupLi-484XqzzXYTN79pDGecmpZyeaDDiPzPxApibjq9E9Qssfn3jPB5XRewoFkaxcpbEbrUpleUs88-XYA7B6sChQ6aQ
+    last_name: Maskey
+    name: Utsav Maskey
+    semantic_scholar_id: https://www.semanticscholar.org/author/Utsav-Maskey/2184579226
+    username: ~Utsav_Maskey1
+  - dblp_id: https://dblp.org/pid/330/2432
+    emails: '****@gmail.com'
+    first_name: Gautam
+    google_scholar_id: https://scholar.google.com.au/citations?hl=en&user=p8cdsVoAAAAJ
+    last_name: Kashyap
+    middle_name: Siddharth
+    name: Gautam Siddharth Kashyap
+    orcid: https://orcid.org/0000-0003-2140-9617
+    username: ~Gautam_Siddharth_Kashyap1
+  - emails: '****@pcampus.edu.np'
+    first_name: Ganesh
+    homepage: https://pcampus.edu.np
+    institution: Tribhuvan University
+    last_name: Gautam
+    name: Ganesh Gautam
+    username: ~Ganesh_Gautam1
+  - dblp_id: https://dblp.org/pid/253/6972.html
+    emails: '****@sydney.edu.au'
+    first_name: Usman
+    google_scholar_id: https://scholar.google.com.au/citations?hl=en&user=61Ou1P8AAAAJ&view_op=list_works&sortby=pubdate
+    homepage: https://usmaann.github.io/
+    institution: Macquarie University
+    last_name: Naseem
+    name: Usman Naseem
+    orcid: https://orcid.org/0000-0003-0191-7171
+    semantic_scholar_id: https://www.semanticscholar.org/author/Usman-Naseem/1394609613
+    username: ~Usman_Naseem1
+  decision: '2026'
+  file: 64.pdf
+  id: 64
+  openreview_id: U32b0oHNdm
+  pdf_file: 50b136cbe4ad09dfed545443da26d7a9fa7f41f6.pdf
+  title: 'MaiBERT: A Pre-training Corpus and Language Model for Low-Resourced Maithili
+    Language'
+- abstract: 'Kyrgyz is a morphologically rich Turkic language that remains significantly
+    underrepresented in modern multilingual language models. To address this resource
+    gap, we introduce KyrText, a diverse, large-scale corpus containing 680.5 million
+    words. Unlike existing web-crawled datasets which are often noisy or misidentified,
+    KyrText aggregates high-quality news, Wikipedia entries, digitized literature,
+    and extensive legal archives from the Supreme Court and Ministry of Justice of
+    the Kyrgyz Republic. We leverage this corpus for the continual pre-training of
+    mBERT, XLM-R, and DeBERTaV3, while also training RoBERTa architectures from scratch.
+
+
+    Evaluations across several bench marks—including natural language inference (XNLI),
+    question answering (BoolQ), sentiment analysis (SST-2), and paraphrase identification
+    (PAWS-X)—demonstrate that targeted pre-training on KyrText yields substantial
+    performance improvements over baseline multilingual models.
+
+
+    Our findings indicate that while base-sized models benefit immediately from this
+    domain-specific data, larger architectures require more extensive training cycles
+    to fully realize their potential. We release our corpus and suite of models to
+    establish a new foundation for Kyrgyz Natural Language Processing.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/332/1744
+    emails: '****@berkeley.edu'
+    first_name: Tilek
+    last_name: Chubakov
+    name: Tilek Chubakov
+    username: ~Tilek_Chubakov1
+  decision: '2026'
+  file: 65.pdf
+  id: 65
+  openreview_id: bVB1eOBiFL
+  pdf_file: b66c5ce8409022cd336f0824bd371b647ede7889.pdf
+  title: 'KyrText: A Multi-Domain Large-Scale Corpus for Kyrgyz Language'
+- abstract: Encoder-only transformers remain essential for practical NLP tasks. While
+    recent advances in multilingual models have improved cross-lingual capabilities,
+    low-resource languages such as Latvian remain underrepresented in pretraining
+    corpora, and few monolingual Latvian encoders currently exist. We address this
+    gap by pretraining a suite of Latvian-specific encoders based on RoBERTa, DeBERTaV3,
+    and ModernBERT architectures, including long-context variants, and evaluating
+    them on a comprehensive Latvian benchmark suite. Our models are competitive with
+    existing monolingual and multilingual encoders while benefiting from recent architectural
+    and efficiency advances. Our best model, lv-deberta-base (111M parameters), achieves
+    the strongest overall performance, outperforming larger multilingual baselines
+    and prior Latvian-specific encoders. We release all pretrained models and evaluation
+    resources to support further research and practical applications in Latvian NLP.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/146/3910
+    emails: '****@lumii.lv'
+    first_name: Arturs
+    google_scholar_id: https://scholar.google.com/citations?user=AcsYI2MAAAAJ&hl=lv&oi=sra
+    institution: University of Latvia
+    last_name: Znotins
+    name: Arturs Znotins
+    orcid: https://orcid.org/0000-0002-0239-5048
+    username: ~Arturs_Znotins1
+  decision: '2026'
+  file: 66.pdf
+  id: 66
+  openreview_id: D47ZLHDO1A
+  pdf_file: c5a84e1cc51c3e754658283e7f3e8f17f9973a87.pdf
+  title: Pretraining and Benchmarking Modern Encoders for Latvian
+- abstract: 'Fine-tuning multilingual models for low-resource dialect translation
+    frequently encounters a “plausibility over faithfulness” dilemma, resulting in
+    severe semantic drift on dialect-specific tokens. We term this phenomenon the
+    “Probability Trap,” where models prioritize statistical fluency over semantic
+    fidelity. To address this, we propose MVS-Rank (Multi-View Scoring Reranking),
+    a generate-then-rerank framework that decouples evaluation from generation. Our
+    method assesses translation candidates through three complementary perspectives:
+    (1) Source-Side Faithfulness via a Reverse Translation Model to anchor semantic
+    fidelity; (2) Local Fluency using Masked Language Models to ensure syntactic precision;
+    and (3) Global Fluency leveraging Large Language Models to capture discourse coherence.
+    Extensive experiments on Cantonese-Mandarin benchmarks demonstrate that MVS-Rank
+    achieves state-of-the-art performance, significantly outperforming strong fine-tuning
+    baselines by effectively rectifying hallucinations while maintaining high fluency.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/166/5153
+    emails: '****@gmail.com'
+    first_name: Yuzhi
+    last_name: Liang
+    name: Yuzhi Liang
+    username: ~Yuzhi_Liang1
+  - emails: '****@mail.gdufs.edu.cn'
+    first_name: Fangqi
+    homepage: https://www.linkedin.com/in/%E8%8A%B3%E7%90%AA-%E9%99%88-5a17b23a3/
+    last_name: Chen
+    name: Fangqi Chen
+    username: ~Fangqi_Chen1
+  decision: '2026'
+  file: 68.pdf
+  id: 68
+  openreview_id: v0mDSSRjeH
+  pdf_file: e1c81788cd031103ee8acb3f7cbd8bac17db6bde.pdf
+  title: 'Escaping the Probability Trap: Mitigating Semantic Drift in Cantonese-Mandarin
+    Translation'
+- abstract: We use Finnish and Northern Sámi as a case study to investigate how suitable
+    multilingual LLMs are for low-resource machine translation and how much performance
+    can be improved using supervised finetuning with varying amounts of parallel data.
+    Our experiments on zero-shot translation reveal that mainstream multilingual LLMs
+    from a variety of model families are unsuitable for translation between our chosen
+    languages as-is, regardless of the generation hyperparameters. On the other hand,
+    our experiments on supervised finetuning reveal that even relatively small amounts
+    of parallel data can be very useful for improving performance in both translation
+    directions.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/288/2453.html
+    emails: '****@brandeis.edu'
+    first_name: Jonne
+    google_scholar_id: https://scholar.google.com/citations?user=01JoCDoAAAAJ&hl=en&oi=ao
+    homepage: https://www.jonnesaleva.com
+    institution: Brandeis University
+    last_name: Sälevä
+    name: Jonne Sälevä
+    semantic_scholar_id: https://www.semanticscholar.org/author/Jonne-Saleva/1724714290
+    username: ~Jonne_Sälevä1
+  - dblp_id: https://dblp.org/pid/78/4390
+    emails: '****@brandeis.edu'
+    first_name: Constantine
+    google_scholar_id: https://scholar.google.com/citations?user=hDOLookAAAAJ&hl=en
+    homepage: https://lignos.org/
+    institution: Brandeis University
+    last_name: Lignos
+    name: Constantine Lignos
+    orcid: https://orcid.org/0000-0001-6410-2848
+    semantic_scholar_id: https://www.semanticscholar.org/author/Constantine-Lignos/1737047
+    username: ~Constantine_Lignos1
+  decision: '2026'
+  file: 69.pdf
+  id: 69
+  openreview_id: zAUpe0ZM39
+  pdf_file: da103f941f48f9b3a793fbc2d5b51a8eb65b3edb.pdf
+  title: How multilingual are multilingual LLMs? A case study in Northern Sámi-Finnish
+    Translation
+- abstract: 'Subword tokenization critically affects Natural Language Processing (NLP)
+    performance, yet its behavior in morphologically rich and low-resource language
+    families remains under-explored. This study systematically compares three subword
+    paradigms—Byte Pair Encoding (BPE), Overlap BPE (OBPE), and Unigram Language Model—across
+    six Uralic languages with varying resource availability and typological diversity.
+
+
+    Using part-of-speech (POS) tagging as a controlled downstream task, we show that
+    OBPE consistently achieves stronger morphological alignment and higher tagging
+    accuracy than conventional methods, particularly within the Latin-script group.
+    These gains arise from reduced fragmentation in open-class categories and a better
+    balance across the frequency spectrum. Transfer efficacy further depends on the
+    downstream tagging architecture, interacting with both training volume and genealogical
+    proximity.
+
+
+    Taken together, these findings highlight that morphology-sensitive tokenization
+    is not merely a preprocessing choice but a decisive factor in enabling effective
+    cross-lingual transfer for agglutinative, low-resource languages.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@student.uef.fi'
+    first_name: Nuo
+    last_name: Xu
+    name: Nuo Xu
+    username: ~Nuo_Xu14
+  - emails: '****@ssu.ac.kr'
+    first_name: Ahrii
+    google_scholar_id: https://scholar.google.com/citations?user=2z9WbxwAAAAJ&hl=ko&oi=ao
+    homepage: https://trotacodigos.github.io
+    institution: Soongsil University and AI-Bio Convergence Research Institute
+    last_name: Kim
+    name: Ahrii Kim
+    orcid: https://orcid.org/0000-0003-2989-3220
+    semantic_scholar_id: https://www.semanticscholar.org/author/Ahrii-Kim/84223961
+    username: ~Ahrii_Kim1
+  decision: '2026'
+  file: 70.pdf
+  id: 70
+  openreview_id: Md0NzcUTTW
+  pdf_file: 14d2b06b73b88bb788bd53fecaa3d11e39f2daeb.pdf
+  title: 'Tokenization and Morphological Fidelity in Uralic NLP: A Cross-Lingual Evaluation'
+- abstract: Diacritics restoration in Hebrew is a fundamental task for ensuring accurate
+    word pronunciation and disambiguating textual meaning. Despite the language's
+    high degree of ambiguity when unvocalized, recent machine learning approaches
+    have significantly advanced performance on this task. In this work, we present
+    DiVRit, a novel system for Hebrew diacritization that frames the task as a zero-shot
+    classification problem. Our approach operates at the word level, selecting the
+    most appropriate diacritization pattern for each undiacritized word from a dynamically
+    generated candidate set, conditioned on the surrounding textual context. A key
+    innovation of DiVRit is its use of a Hebrew Visual Language Model to process diacritized
+    candidates as images, allowing diacritic information to be embedded directly within
+    their vector representations while the surrounding context remains tokenization-based.
+    Through a comprehensive evaluation across various configurations, we demonstrate
+    that the system effectively performs diacritization without relying on complex,
+    explicit linguistic analysis. Notably, in an ``oracle'' setting where the correct
+    diacritized form is guaranteed to be among the provided candidates, DiVRit achieves
+    a high level of accuracy. Furthermore, strategic architectural enhancements and
+    optimized training methodologies yield significant improvements in the system's
+    overall generalization capabilities. These findings highlight the promising potential
+    of visual representations for accurate and automated Hebrew diacritization.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/382/6133
+    emails: '****@gmail.com'
+    first_name: Yair
+    homepage: http://linkedin.com/in/yair-elboher
+    institution: ', Ben-Gurion University of the Negev'
+    last_name: Elboher
+    name: Yair Elboher
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yair-Elboher/2309170707
+    username: ~Yair_Elboher1
+  - dblp_id: https://dblp.org/pid/153/5384
+    emails: '****@gmail.com'
+    first_name: Yuval
+    google_scholar_id: https://scholar.google.com/citations?user=aYAcXccAAAAJ&hl=en
+    homepage: http://www.yuvalpinter.com
+    institution: Ben-Gurion University of the Negev
+    last_name: Pinter
+    name: Yuval Pinter
+    orcid: https://orcid.org/0000-0003-3174-1621
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yuval-Pinter/1826312
+    username: ~Yuval_Pinter1
+  decision: '2026'
+  file: 71.pdf
+  id: 71
+  openreview_id: lzAL7QFofE
+  pdf_file: 87d6d2988b283d70df8d1a59936be0a6d6bbd8ae.pdf
+  title: Hebrew Diacritics Restoration using Visual Representation
+- abstract: 'Domain-specific encoder language models have been shown to accurately
+    represent semantic distributions as they appear in the pre-training corpus. However,
+    the general consensus is that general language models can adapt to a domain through
+    fine-tuning. Similarly, multilingual models have been shown to leverage transfer
+    learning even for languages that were not present in their pre-training data.
+    Contrastively, tokenization has also been shown to have a great impact on a models''
+    abilities to capture relevant semantic information, while this remains unchanged
+    between pre-training and fine-tuning. This raises the question whether word embeddings
+    for subtokens in models are of sufficient semantic quality for a target domain
+    if not learned for the same domain. In this paper, we compare how different models
+    assign similarity scores to different semantic categories in a highly specialized,
+    non-standardised domain: Early Modern Dutch as written in the archives of the
+    Dutch East India Company. Since the language in this domain is from before spelling
+    conventions were established, and noise accumulates due to the fact that the original
+    handwritten text went through a Handwritten Text Recognition pipeline, this use-case
+    offers a unique opportunity to study both domain-specific semantics as well as
+    a highly complex tokenization task for lesser-resourced languages. Our results
+    support findings in earlier work that fine-tuned models may pick up spurious correlations
+    in the adaptation process and stop relying on relevant semantics learned during
+    pre-training.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@vu.nl'
+    first_name: Stella
+    google_scholar_id: https://scholar.google.com/citations?user=xeMWvjIAAAAJ&hl=nl&oi=ao
+    last_name: Verkijk
+    name: Stella Verkijk
+    orcid: https://orcid.org/0009-0000-9263-2272
+    username: ~Stella_Verkijk1
+  - emails: '****@vu.nl'
+    first_name: Piek
+    google_scholar_id: https://scholar.google.com/citations?user=JvllTMIAAAAJ&hl=en&oi=ao
+    homepage: https://vossen.info/
+    institution: Vrije Universiteit Amsterdam
+    last_name: Vossen
+    name: Piek Vossen
+    orcid: https://orcid.org/0000-0002-6238-5941
+    semantic_scholar_id: https://www.semanticscholar.org/author/P.-Vossen/1791713
+    username: ~Piek_Vossen2
+  decision: '2026'
+  file: 72.pdf
+  id: 72
+  openreview_id: fWwzVHKWr1
+  pdf_file: 6b118a328fb7ae897c68b6c4f9af090e8d93ce5c.pdf
+  title: 'Out-Of-Tune rather than Fine-Tuned: How Pre-training, Fine-tuning and Tokenization
+    Affect Semantic Similarity in a Historical, Non-Standardized Domain'
+- abstract: "Reading comprehension resources for low-resource languages remain limited,\
+    \ particularly datasets designed for educational assessment and diagnostic analysis\
+    \ in contrast to binary correctness.\nWe present a diagnostically rich reading\
+    \ comprehension corpus for\nLuxembourgish, annotated using a two-layer framework\
+    \ that separates\nlinguistic sources of textual difficulty from cognitive and\
+    \ diagnostic\nproperties of comprehension questions. \nThe linguistic layer captures\
+    \ span-level lexical, syntactic, morphological, and discourse-related features,\
+    \ while the cognitive layer\nannotates multiple-choice questions according to\
+    \ the PIRLS cognitive\nprocesses and diagnostically meaningful distractor types\
+    \ following the\nSTARC framework.\nThis design enables fine-grained analysis of\
+    \ reading comprehension\nerrors by linking response patterns to underlying linguistic\
+    \ phenomena. The resulting corpus consists of 640 multiple-choice questions based\
+    \ on 16 annotated Luxembourgish texts. We describe the annotation methodology\
+    \ agreement measures, and will release\nthe dataset as a publicly available resource\
+    \ for educational and\nlow-resource NLP research."
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@uni.lu'
+    first_name: Christophe
+    homepage: https://www.uni.lu/fstm-en/people/christophe-friezas-goncalves/
+    institution: University of Luxemburg
+    last_name: Gonçalves
+    middle_name: Friezas
+    name: Christophe Friezas Gonçalves
+    username: ~Christophe_Friezas_Gonçalves1
+  - emails: '****@uni.lu'
+    first_name: Salima
+    google_scholar_id: https://scholar.google.com/citations?user=OawQSiAAAAAJ&hl=fr
+    institution: University of Luxemburg
+    last_name: Lamsiyah
+    name: Salima Lamsiyah
+    username: ~Salima_Lamsiyah1
+  - emails: '****@uni.lu'
+    first_name: Christoph
+    google_scholar_id: https://scholar.google.com/citations?user=rhrWnwgAAAAJ&hl=en&oi=ao
+    homepage: https://www.uni.lu
+    last_name: Schommer
+    name: Christoph Schommer
+    orcid: https://orcid.org/0000-0002-0308-7637
+    username: ~Christoph_Schommer1
+  decision: '2026'
+  file: 73.pdf
+  id: 73
+  openreview_id: n9Slae7rUg
+  pdf_file: ad6bfb53146433998a18339538c995f362b8c71f.pdf
+  title: 'LuxDiagRC: A Diagnostic Reading Comprehension Corpus for Luxembourgish with
+    Linguistic and Cognitive Annotation Layers'
+- abstract: Although Part-of-Speech (POS) tagging has been widely studied, it still
+    presents several challenges, particularly reduced performance on out-of-domain
+    data. While increasing in-domain training data can be effective, this strategy
+    is often impractical in historical low-resource settings. Cross-lingual transfer
+    learning has shown promise for low-resource languages; however, its impact on
+    domain generalization has received limited attention and may remain insufficient
+    when used in isolation. This study focuses on cross-lingual and cross-domain transfer
+    learning for POS tagging on four historical Germanic low-resource languages in
+    two literary genres. For each language, POS tagged data were extracted and mapped
+    to the Universal Dependencies UPOS tag set to establish a monolingual baseline
+    and train three multilingual models in two dataset configurations. The results
+    were consistent with previous findings, indicating that structural differences
+    between the genres can negatively influence transfer learning. The poetry-only
+    multilingual model showed improvements within that domain compared to the baseline.
+    In contrast, multilingual models trained with all available data had lower performance
+    caused by substantial structural differences in the corpora. This study underlines
+    the importance of investigating the domain-generalization abilities of the models,
+    which may be negatively influenced by substantial structural differences between
+    data. In addition, it sheds light on the study of historical low-resource languages.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@lingfil.uu.se'
+    first_name: Irene
+    homepage: https://www.uu.se/en/contact-and-organisation/staff?query=N23-2374
+    last_name: Miani
+    name: Irene Miani
+    username: ~Irene_Miani1
+  - dblp_id: https://dblp.org/pid/04/5096
+    emails: '****@lingfil.uu.se'
+    first_name: Sara
+    google_scholar_id: https://scholar.google.com/citations?user=A-zhXEoAAAAJ&hl=en
+    homepage: https://cl.lingfil.uu.se/~sara/
+    institution: Uppsala University
+    last_name: Stymne
+    name: Sara Stymne
+    orcid: https://orcid.org/0000-0003-3726-9399
+    semantic_scholar_id: https://www.semanticscholar.org/author/Sara-Stymne/1713395
+    username: ~Sara_Stymne1
+  - emails: '****@engelska.uu.se'
+    first_name: Gregory
+    homepage: https://www.uu.se/en/contact-and-organisation/staff?query=N21-731
+    institution: Uppsala University
+    last_name: Darwin
+    middle_name: R.
+    name: Gregory R. Darwin
+    username: ~Gregory_R._Darwin1
+  decision: '2026'
+  file: 74.pdf
+  id: 74
+  openreview_id: amKsK3eTRc
+  pdf_file: a930021b654fccd5a2258f5c36041b304dad910e.pdf
+  title: Cross-Lingual and Cross-Domain Transfer Learning for POS Tagging in Historical
+    Germanic Low-Resource Languages
+- abstract: 'We release MTQE.en-he: to our knowledge,
+
+    the first publicly available English-Hebrew
+
+    benchmark for Machine Translation Quality
+
+    Estimation. MTQE.en-he contains 959 English segments from WMT24++, each paired
+
+    with a machine translation into Hebrew, and
+
+    Direct Assessment scores of the translation
+
+    quality annotated by three human experts. We
+
+    benchmark ChatGPT prompting, TransQuest,
+
+    and CometKiwi and show that ensembling
+
+    the three models outperforms the best single
+
+    model (CometKiwi) by 6.4 percentage points
+
+    Pearson and 5.8 percentage points Spearman.
+
+    Fine-tuning experiments with TransQuest and
+
+    CometKiwi reveal that full-model updates are
+
+    sensitive to overfitting and distribution collapse,
+
+    yet parameter-efficient methods (LoRA, BitFit, and FTHead, i.e., fine-tuning only
+    the classification head)
+
+    train stably and yield improvements of 2-3 percentage points. MTQE.en-he
+
+    and our experimental results enable future research on this under-resourced language
+    pair.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/322/5373.html
+    emails: '****@gmail.com'
+    first_name: Andy
+    google_scholar_id: https://scholar.google.com/citations?user=r3HxDqAAAAAJ&hl=en
+    homepage: https://andyjrosenbaum.github.io
+    institution: Self-employed
+    last_name: Rosenbaum
+    name: Andy Rosenbaum
+    semantic_scholar_id: https://www.semanticscholar.org/author/Andrew-Rosenbaum/146177177
+    username: ~Andy_Rosenbaum1
+  - emails: '****@lexicala.com'
+    first_name: Assaf
+    homepage: https://lexicala.com/
+    institution: Lexicala by K Dictionaries
+    last_name: Siani
+    name: Assaf Siani
+    username: ~Assaf_Siani1
+  - emails: '****@lexicala.com'
+    first_name: Ilan
+    last_name: Kernerman
+    name: Ilan Kernerman
+    username: ~Ilan_Kernerman1
+  decision: '2026'
+  file: 75.pdf
+  id: 75
+  openreview_id: bNo6DGnpHC
+  pdf_file: 09e2ce13f8130719ee60408f20b358c89cb1d0c1.pdf
+  title: 'MTQE.en-he: Machine Translation Quality Estimation for English-Hebrew'
+- abstract: 'Tokenizer mismatch is a practical bottleneck for low-resource language
+    varieties: when text is fragmented into disproportionately many subwords or bytes,
+    it wastes context, increases truncation, and can be brittle to orthographic variation.
+
+    We present a lightweight and reproducible audit centered on Ladin and evaluated
+    on the Identification of Languages and Dialects of
+
+    Italy benchmark of eleven Italian varieties.
+
+    Our diagnostic suite combines tokenization cost measures (tokens per word, truncation
+    pressure, bytes per token) with retention indicators (word split rate, continued-token
+    rate, and type-level retention) and fragmentation proxies that reveal splitting
+    patterns beyond fertility.
+
+    We pair these diagnostics with a conservative orthography robustness protocol
+    (diacritics, casing, punctuation and dash normalization) and assess how diagnostic
+    changes relate to performance drops in lightweight baselines for sentence-level
+    variety identification.
+
+    We release code and derived statistics to support reproducible tokenizer audits
+    in other low-resource settings.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@jp.kpmg.com'
+    first_name: Alessio
+    google_scholar_id: https://scholar.google.com/citations?user=5izUeQQAAAAJ&hl=en
+    homepage: https://staale92.github.io/
+    institution: Studio Strata, KPMG Advisory Lighthouse and The University of Tokyo
+    last_name: Staffini
+    name: Alessio Staffini
+    orcid: https://orcid.org/0000-0001-5001-349X
+    username: ~Alessio_Staffini1
+  decision: '2026'
+  file: 76.pdf
+  id: 76
+  openreview_id: Zk75j7OxAd
+  pdf_file: 8f883bb0b674bc4a9b6c97fd522c3ab984a3c8e7.pdf
+  title: Tokenization Cost, Retention, and Orthography Robustness for Ladin and Italian
+    Varieties
+- abstract: Speech-to-Speech Translation (S2ST) focuses on generating spoken output
+    in a target language directly from spoken input in a source language. Despite
+    progress in S2ST modeling, low-resource Indic languages remain poorly supported,
+    primarily because large-scale parallel speech corpora are unavailable. We present
+    UrHiOdSynth, a three-language parallel S2ST dataset containing approximately 75
+    hours of speech across  Urdu, Hindi, and Odia. The corpus consists of 10,735 aligned
+    sentence triplets, with an average utterance length of 8.45 seconds. To our knowledge,
+    UrHiOdSynth represents the largest multi-domain resource offering aligned speech
+    and text for S2ST in this language context. Beyond speech-to-speech translation,
+    the dataset supports tasks such as automatic speech recognition, speech-to-text
+    translation, text-to-speech synthesis, and machine translation. This flexibility
+    enables the training of unified multilingual models, particularly for low-resource
+    Indic languages.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@myamu.ac.in'
+    first_name: ''
+    last_name: Jamaluddin
+    name: Jamaluddin
+    username: ~Jamaluddin1
+  - emails: '****@gmail.com'
+    first_name: Subhankar
+    last_name: Panda
+    name: Subhankar Panda
+    username: ~Subhankar_Panda1
+  - emails: '****@gmail.com'
+    first_name: Aditya
+    homepage: https://adinarendra98.github.io
+    institution: Indian Institute of Technology, Indore
+    last_name: Narendra
+    name: Aditya Narendra
+    username: ~Aditya_Narendra1
+  - emails: '****@iiti.ac.in'
+    first_name: Kamanksha
+    google_scholar_id: https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=2&hl=en&user=hUfBsLgAAAAJ&authuser=2
+    last_name: Dubey
+    middle_name: Prasad
+    name: Kamanksha Prasad Dubey
+    orcid: https://orcid.org/0009-0004-8199-5317
+    semantic_scholar_id: https://www.semanticscholar.org/author/Dubey-Prasad-Kamanksha/72031130
+    username: ~Kamanksha_Prasad_Dubey1
+  - emails: '****@amu.ac.in'
+    first_name: Mohammad
+    google_scholar_id: https://scholar.google.com/citations?user=yaEgXYMAAAAJ
+    homepage: https://www.amu.ac.in/faculty/computer-science/mohammad-nadeem
+    last_name: Nadeem
+    name: Mohammad Nadeem
+    username: ~Mohammad_Nadeem1
+  decision: '2026'
+  file: 77.pdf
+  id: 77
+  openreview_id: 1pykhw54Sz
+  pdf_file: a546b61401d3d799ac981372af66f50bd5e41bb9.pdf
+  title: 'UrHiOdSynth: A Multilingual Synthetic Corpus for Speech-to-Speech Translation
+    in Low-Resource Indic Languages'
+- abstract: Evaluating factual consistency is essential for reliable text summarization,
+    particularly in high-stakes domains such as healthcare and news. However, most
+    existing evaluation metrics overlook Bangla, a widely spoken yet under-resourced
+    language, and often depend on reference summaries. We introduce BanglaSummEval,
+    a reference-free, question-answering-based framework for evaluating factual consistency
+    in Bangla summarization. The proposed method assesses both factual accuracy and
+    content coverage through automatically generated questions and answers derived
+    from the source document and the summary. A single multilingual instruction-tuned
+    language model handles question generation, question answering, candidate answer
+    extraction, and question importance weighting. This unified design reduces system
+    complexity and computational cost. To capture semantic consistency beyond surface-level
+    overlap, we use BERTScore-Recall for answer comparison. We validate BanglaSummEval
+    on 300 human-written summaries from educational and medical domains, demonstrating
+    strong correlation with expert human judgments (Pearson's $r = 0.694$, Spearman's
+    $\rho = 0.763$). By providing interpretable, step-wise diagnostics alongside reliable
+    evaluation scores, BanglaSummEval offers a practical and transparent solution
+    for factual consistency evaluation in low-resource language settings.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@iut-dhaka.edu'
+    first_name: Ahmed
+    institution: Islamic University of Technology
+    last_name: Rafid
+    name: Ahmed Rafid
+    username: ~Ahmed_Rafid1
+  - emails: '****@iut-dhaka.edu'
+    first_name: Rumman
+    last_name: Adib
+    name: Rumman Adib
+    username: ~Rumman_Adib1
+  - emails: '****@iut-dhaka.edu'
+    first_name: Fariya
+    last_name: Ahmed
+    name: Fariya Ahmed
+    username: ~Fariya_Ahmed1
+  - emails: '****@iut-dhaka.edu'
+    first_name: Ajwad
+    homepage: https://ajwad-abrar.github.io
+    last_name: Abrar
+    name: Ajwad Abrar
+    username: ~Ajwad_Abrar1
+  - dblp_id: https://dblp.org/pid/338/1271
+    emails: '****@gmail.com'
+    first_name: Mohammed Saidul
+    google_scholar_id: https://scholar.google.com/citations?user=3Pb203IAAAAJ
+    homepage: https://cse.iutoic-dhaka.edu/profile/saidulislam
+    institution: York University
+    last_name: Islam
+    name: Mohammed Saidul Islam
+    semantic_scholar_id: https://www.semanticscholar.org/author/Mohammed-Saidul-Islam/2304464834
+    username: ~Mohammed_Saidul_Islam1
+  decision: '2026'
+  file: 79.pdf
+  id: 79
+  openreview_id: 3GoeNeITmN
+  pdf_file: 44b737e3b3780747641426826de08abe02500926.pdf
+  title: 'BanglaSummEval: Reference-Free Factual Consistency Evaluation for Bangla
+    Summarization'
+- abstract: Tiny Recursive Models (TRM) achieve strong results on reasoning tasks
+    through iterative refinement of a shared network. We investigate whether these
+    recursive mechanisms transfer to Quality Estimation (QE) for low-resource languages
+    using a three-phase methodology. Experiments on $8$ language pairs on a low-resource
+    QE dataset reveal three findings. First, TRM's recursive mechanisms do not transfer
+    to QE. External iteration hurts performance, and internal recursion offers only
+    narrow benefits. Next, representation quality dominates architectural choices,
+    and lastly, frozen pretrained embeddings match fine-tuned performance while reducing
+    trainable parameters by 37$\times$ (7M vs 262M). TRM-QE with frozen XLM-R embeddings
+    achieves a Spearman's correlation of 0.370, matching fine-tuned variants (0.369)
+    and outperforming an equivalent-depth standard transformer (0.336). On Hindi and
+    Tamil, frozen TRM-QE outperforms MonoTransQuest (560M parameters) with 80$\times$
+    fewer trainable parameters, suggesting that weight sharing combined with frozen
+    embeddings enables parameter efficiency for QE.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@surrey.ac.uk'
+    first_name: Umar
+    institution: University of Surrey
+    last_name: Abubacar
+    name: Umar Abubacar
+    orcid: https://orcid.org/0009-0006-3128-9005
+    username: ~Umar_Abubacar1
+  - dblp_id: https://dblp.org/pid/91/7852-1.html
+    emails: '****@surrey.ac.uk'
+    first_name: Roman
+    google_scholar_id: https://scholar.google.com/citations?user=VCrrvZcAAAAJ&hl=en
+    homepage: https://www.romanbauer.net/
+    institution: University of Surrey
+    last_name: Bauer
+    name: Roman Bauer
+    orcid: https://orcid.org/0000-0002-7268-9359
+    username: ~Roman_Bauer1
+  - dblp_id: https://dblp.org/pid/127/0183
+    emails: '****@gmail.com'
+    first_name: Diptesh
+    google_scholar_id: https://scholar.google.co.in/citations?user=UNCgCAEAAAAJ&hl=en
+    homepage: http://dipteshkanojia.github.io
+    institution: University of Surrey
+    last_name: Kanojia
+    name: Diptesh Kanojia
+    orcid: https://orcid.org/0000-0001-8814-0080
+    semantic_scholar_id: https://www.semanticscholar.org/author/Diptesh-Kanojia/2920443
+    username: ~Diptesh_Kanojia1
+  decision: '2026'
+  file: 80.pdf
+  id: 80
+  openreview_id: vBwnWpxNLH
+  pdf_file: 0e642c93c2792f290d6895a6aff92894472d59b9.pdf
+  title: Parameter-Efficient Quality Estimation via Frozen Recursive Models
+- abstract: 'This work focuses on neural machine translation between French and Mooré,
+    leveraging the capabilities of Large Language Models (LLMs) in a low-resource
+    language context. Mooré is a local language widely spoken in Burkina Faso but
+    remains underrepresented in digital resources. Alongside Mooré, French, now a
+    working language, remains widely used in administration, education, justice, etc.
+    The coexistence of these two languages creates a growing demand for effective
+    translation tools. However, Mooré, like many low-resource languages, poses significant
+    challenges for machine translation due to the scarcity of parallel corpora and
+    its complex morphology.
+
+
+    The main objective of this work is to adapt LLMs for French–Mooré translation.
+    Three pre-trained models were selected: No Language Left Behind (NLLB-200), mBART50,
+    and AfroLM. A corpus of approximately 83,000 validated sentence pairs was compiled
+    from an initial collection of 97,060 pairs through pre-processing, semantic filtering,
+    and human evaluation. Specific adaptations to tokenizers and model architectures
+    were applied to improve translation quality.
+
+
+    The results show that the fine-tuned NLLB model outperforms the others, highlighting
+    the importance of native language support. mBART50 achieves comparable performance
+    after fine-tuning, while AfroLM remains less effective. Despite existing limitations,
+    this study demonstrates the potential of fine-tuned LLMs for African low-resource
+    languages.'
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: walkercompaore972@gmail.com
+    first_name: walkercompaore972@gmail.com
+    institution: NA
+    last_name: walkercompaore972@gmail.com
+    name: walkercompaore972@gmail.com
+    username: walkercompaore972@gmail.com
+  - emails: '****@uni.lu'
+    first_name: Maimouna
+    last_name: Ouattara
+    name: Maimouna OUATTARA
+    username: ~Maimouna_OUATTARA1
+  - emails: '****@citadel.bf'
+    first_name: Rodrique
+    google_scholar_id: https://scholar.google.com/citations?user=F7kWkqQAAAAJ&hl=fr
+    last_name: Kafando
+    name: Rodrique KAFANDO
+    username: ~Rodrique_KAFANDO1
+  - dblp_id: https://dblp.org/pid/00/8006.html
+    emails: '****@uni.lu'
+    first_name: Tegawendé
+    google_scholar_id: https://scholar.google.com/citations?user=t73Mqm8AAAAJ&hl=en&oi=ao
+    homepage: https://bissyande.github.io/
+    institution: University of Luxemburg
+    last_name: Bissyandé
+    middle_name: F.
+    name: Tegawendé F. Bissyandé
+    orcid: https://orcid.org/0000-0001-7270-9869
+    username: ~Tegawendé_F._Bissyandé1
+  - emails: '****@uni.lu'
+    first_name: Abdoul
+    institution: University of Luxemburg
+    last_name: Kabore
+    middle_name: Kader
+    name: Abdoul Kader KABORE
+    orcid: https://orcid.org/0000-0002-3151-9433
+    username: ~Abdoul_Kader_KABORE1
+  - emails: aminata.sabane@ujkz.bf
+    first_name: aminata.sabane@ujkz.bf
+    institution: NA
+    last_name: aminata.sabane@ujkz.bf
+    name: aminata.sabane@ujkz.bf
+    username: aminata.sabane@ujkz.bf
+  decision: '2026'
+  file: 81.pdf
+  id: 81
+  openreview_id: v5CFnfc2qK
+  pdf_file: c4c460680377c336341d1a171a16c3c93fad21c3.pdf
+  title: 'Neural Machine Translation for French–Mooré: Adapting Large Language Models
+    to Low-Resource Languages'
+- abstract: Most of African low-resource languages are primarily spoken rather than
+    written and lack large, standardized textual resources. In many communities, low
+    literacy rates and limited access to formal education mean that text-based translation
+    technologies alone are insufficient for effective communication. As a result,
+    speech-to-speech translation systems play a crucial role by enabling direct and
+    natural interaction across languages without requiring reading or writing skills.
+    Such systems are essential for improving access to information, public services,
+    healthcare, and education. The goal of our work is to build powerful transcription
+    and speech synthesis models for Mooré language. Then, these models have been used
+    to build a cascaded voice translation system between French and Mooré, since we
+    already got a French-Mooré machine translation model. We collected Mooré audio-text
+    pairs, reaching a total audio duration of 150 hours. Then, We fine-tuned Orpheus-3B
+    and XTTS-v2 for speech synthesis and Wav2Vec-Bert-2.0 for transcription task.
+    After fine-tuning and evaluation by 36 Mooré native speakers, XTTS-v2 achieved
+    a MOS of 4.36 out of 5 compared to 3.47 out of 5 for Orpheus-3B. The UTMOS evaluation
+    resulted in 3.47 out of 5 for XTTS-v2 and 2.80 out of 5 for Orpheus-3B. The A/B
+    tests revealed that the evaluators preferred XTTS-v2 Mooré audios in 77.8\% of
+    cases compared to 22.2\% for Orpheus-3B. After fine-tuning on Mooré, Wav2Vec-Bert-2.0
+    achieved a WER of 4.24\% and a CER of 1.11\%. Using these models, we successfully
+    implemented a French-Mooré Speech-to-Speech Translation system.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@protonmail.com'
+    first_name: Fayçal
+    last_name: Ouedraogo
+    middle_name: S. A.
+    name: Fayçal S. A. OUEDRAOGO
+    username: ~Fayçal_S._A._OUEDRAOGO1
+  - emails: '****@uni.lu'
+    first_name: Maimouna
+    last_name: Ouattara
+    name: Maimouna OUATTARA
+    username: ~Maimouna_OUATTARA1
+  - emails: '****@citadel.bf'
+    first_name: Rodrique
+    google_scholar_id: https://scholar.google.com/citations?user=F7kWkqQAAAAJ&hl=fr
+    last_name: Kafando
+    name: Rodrique KAFANDO
+    username: ~Rodrique_KAFANDO1
+  - emails: '****@uni.lu'
+    first_name: Abdoul
+    institution: University of Luxemburg
+    last_name: Kabore
+    middle_name: Kader
+    name: Abdoul Kader KABORE
+    orcid: https://orcid.org/0000-0002-3151-9433
+    username: ~Abdoul_Kader_KABORE1
+  - emails: aminata.sabane@ujkz.bf
+    first_name: aminata.sabane@ujkz.bf
+    institution: NA
+    last_name: aminata.sabane@ujkz.bf
+    name: aminata.sabane@ujkz.bf
+    username: aminata.sabane@ujkz.bf
+  - dblp_id: https://dblp.org/pid/00/8006.html
+    emails: '****@uni.lu'
+    first_name: Tegawendé
+    google_scholar_id: https://scholar.google.com/citations?user=t73Mqm8AAAAJ&hl=en&oi=ao
+    homepage: https://bissyande.github.io/
+    institution: University of Luxemburg
+    last_name: Bissyandé
+    middle_name: F.
+    name: Tegawendé F. Bissyandé
+    orcid: https://orcid.org/0000-0001-7270-9869
+    username: ~Tegawendé_F._Bissyandé1
+  decision: '2026'
+  file: 82.pdf
+  id: 82
+  openreview_id: YJw1Sso3LM
+  pdf_file: f1a7916aee051721d983e391d27c75b256b89c8c.pdf
+  title: 'Contributing to Speech-to-Speech Translation for African Low-Resource Languages
+    : Study of French-Mooré Pair'
+- abstract: Quality Estimation (QE) is essential for assessing machine translation
+    quality in reference-less settings, particularly for domain-specific and low-resource
+    language scenarios. In this paper, we investigate sentence-level QE for English
+    to Indic machine translation across four domains (Healthcare, Legal, Tourism,
+    and General) and five language pairs. We systematically compare zero-shot, few-shot,
+    and guideline-anchored prompting across selected closed-weight and open-weight
+    LLMs. Findings indicate that while closed-weight models achieve strong performance
+    via prompting alone, prompt-only approaches remain fragile for open-weight models,
+    especially in high-risk domains. To address this, we adopt ALOPE, a framework
+    for LLM-based QE which uses Low-Rank Adaptation with regression heads attached
+    to selected intermediate Transformer layers. We also extend ALOPE with the recently
+    proposed Low-Rank Multiplicative Adaptation (LoRMA) for this work. Our results
+    show that intermediate-layer adaptation consistently improves QE performance,
+    with gains in semantically complex domains, indicating a way ahead for robust
+    QE in practical scenarios. We release code and domain-specific QE datasets publicly
+    for further research.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - emails: '****@surrey.ac.uk'
+    first_name: Namrata
+    last_name: Gurav
+    middle_name: Bhalchandra Patil
+    name: Namrata Bhalchandra Patil Gurav
+    username: ~Namrata_Bhalchandra_Patil_Gurav1
+  - emails: '****@gmail.com'
+    first_name: Akashdeep
+    last_name: Ranu
+    name: Akashdeep Ranu
+    username: ~Akashdeep_Ranu1
+  - dblp_id: https://dblp.org/pid/306/9400.html
+    emails: '****@surrey.ac.uk'
+    first_name: Archchana
+    google_scholar_id: https://scholar.google.com/citations?user=BlObQHUAAAAJ&hl=en&num=20&newwindow=1&inst=10039849697578676869
+    last_name: Sindhujan
+    name: Archchana Sindhujan
+    orcid: https://orcid.org/0000-0002-6467-6873
+    semantic_scholar_id: https://www.semanticscholar.org/author/Archchana-Kugathasan/2051689787
+    username: ~Archchana_Sindhujan1
+  - dblp_id: https://dblp.org/pid/127/0183
+    emails: '****@gmail.com'
+    first_name: Diptesh
+    google_scholar_id: https://scholar.google.co.in/citations?user=UNCgCAEAAAAJ&hl=en
+    homepage: http://dipteshkanojia.github.io
+    institution: University of Surrey
+    last_name: Kanojia
+    name: Diptesh Kanojia
+    orcid: https://orcid.org/0000-0001-8814-0080
+    semantic_scholar_id: https://www.semanticscholar.org/author/Diptesh-Kanojia/2920443
+    username: ~Diptesh_Kanojia1
+  decision: '2026'
+  file: 83.pdf
+  id: 83
+  openreview_id: heYXacpMZT
+  pdf_file: eac48a0a3c505bd72b03e9bb81712a8270ec041d.pdf
+  title: Domain-Specific Quality Estimation for Machine Translation in Low-Resource
+    Scenarios

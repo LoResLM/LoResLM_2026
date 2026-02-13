@@ -1,0 +1,30 @@
+book_title: Proceedings of the Second Workshop on Language Models for Low-Resource Languages (LoResLM 2026)
+event_name: The Second Workshop on Language Models for Low-Resource Languages
+cover_subtitle: Proceedings of the Workshop
+anthology_venue_id: LoResLM
+start_date: 2026-03-29
+end_date: 2026-03-29
+isbn: 979-8-89176-377-7
+location: Rabat, Morocco
+editors:
+  - first_name: Hansi
+    last_name: Hettiarachchi
+  - first_name: Tharindu
+    last_name: Ranasinghe
+  - first_name: Alistair
+    last_name: Plum
+  - first_name: Paul
+    last_name: Rayson
+  - first_name: Ruslan
+    last_name: Mitkov
+  - first_name: Mohamed
+    last_name: Gaber
+  - first_name: Damith
+    last_name: Premasiri
+  - first_name: Fiona Anting
+    last_name: Tan
+  - first_name: Lasitha
+    last_name: Uyangodage
+publisher: Association for Computational Linguistics
+volume_name: 1
+watermark_book_title: Proceedings of the Second Workshop on Language Models for Low-Resource Languages (LoResLM 2026)

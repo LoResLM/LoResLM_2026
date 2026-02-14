@@ -62,9 +62,10 @@
   - 76
   - 79
   - 83
-- start_time: '2026-03-29 12:00:00'
+- title: Lunch Break
+  start_time: '2026-03-29 12:00:00'
   end_time: '2026-03-29 14:00:00'
-  break: Lunch
+  type: break
 - title: Introduction and Keynote
   start_time: '2026-03-29 14:00:00'
   end_time: '2026-03-29 15:00:00'
@@ -88,9 +89,7 @@
 - title: Overview
   start_time: '2026-03-29 17:00:00'
   end_time: '2026-03-29 17:15:00'
-  type: oral
-  papers:
-  - 37
+  type: plenary
 - title: Awards and Closing
   start_time: '2026-03-29 17:15:00'
   end_time: '2026-03-29 17:30:00'

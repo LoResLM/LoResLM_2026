@@ -1,4 +1,4 @@
-- role: Advisor
+- role: Advisors
   members:
     - first_name: Paul
       last_name: Rayson

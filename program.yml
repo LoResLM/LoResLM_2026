@@ -1,103 +1,97 @@
-- start_time: '2026-03-29 9:30:00'
+- title: Poster Session I - Linguistic Analysis and Language Structure
+  start_time: '2026-03-29 9:30:00'
   end_time: '2026-03-29 10:30:00'
-  session:
-    title: Poster Session I - Linguistic Analysis and Language Structure
-    type: poster
-    papers:
-    - 7
-    - 47
-    - 55
-    - 60
-    - 70
-    - 72
-    - 73
-- start_time: '2026-03-29 11:00:00'
+  type: poster
+  papers:
+  - 7
+  - 47
+  - 55
+  - 60
+  - 70
+  - 72
+  - 73
+- title: Poster Session II - Language Modelling and NLP Applications
+  start_time: '2026-03-29 11:00:00'
   end_time: '2026-03-29 12:00:00'
-  session:
-    title: Poster Session II - Language Modelling and NLP Applications
-    type: poster
-    papers:
-    - 6
-    - 10
-    - 25
-    - 27
-    - 35
-    - 39
-    - 41
-    - 48
-    - 57
-    - 61
-    - 64
-    - 65
-    - 66
-    - 77
-    - 80
-    - 81
-    - 82
-- start_time: '2026-03-29 9:30:00'
+  type: poster
+  papers:
+  - 6
+  - 10
+  - 25
+  - 27
+  - 35
+  - 39
+  - 41
+  - 48
+  - 57
+  - 61
+  - 64
+  - 65
+  - 66
+  - 77
+  - 80
+  - 81
+  - 82
+- title: Virtual Poster Session
+  start_time: '2026-03-29 9:30:00'
   end_time: '2026-03-29 12:00:00'
-  session:
-    title: Virtual Poster Session
-    type: poster
-    papers:
-    - 3
-    - 5
-    - 9
-    - 11
-    - 12
-    - 19
-    - 21
-    - 24
-    - 26
-    - 30
-    - 38
-    - 46
-    - 49
-    - 50
-    - 51
-    - 52
-    - 53
-    - 58
-    - 68
-    - 69
-    - 71
-    - 75
-    - 76
-    - 79
-    - 83
+  type: poster
+  papers:
+  - 3
+  - 5
+  - 9
+  - 11
+  - 12
+  - 19
+  - 21
+  - 24
+  - 26
+  - 30
+  - 38
+  - 46
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 58
+  - 68
+  - 69
+  - 71
+  - 75
+  - 76
+  - 79
+  - 83
 - start_time: '2026-03-29 12:00:00'
   end_time: '2026-03-29 14:00:00'
   break: Lunch
-- start_time: '2026-03-29 14:00:00'
+- title: Introduction and Keynote
+  start_time: '2026-03-29 14:00:00'
   end_time: '2026-03-29 15:00:00'
-  session:
-    title: Introduction and Keynote
-    type: plenary
-- start_time: '2026-03-29 15:00:00'
+  type: plenary
+- title: Oral Session I - Syntactic Analysis in the era of Language Models
+  start_time: '2026-03-29 15:00:00'
   end_time: '2026-03-29 15:30:00'
-  session:
-    title: Oral Session I - Syntactic Analysis in the era of Language Models
-    type: oral
-    papers:
-    - 74
-    - 43
-- start_time: '2026-03-29 16:00:00'
+  type: oral
+  papers:
+  - 74
+  - 43
+- title: Oral Session II - Language Modelling and Applications
+  start_time: '2026-03-29 16:00:00'
   end_time: '2026-03-29 17:00:00'
-  session:
-    title: Oral Session II - Language Modelling and Applications
-    type: oral
-    papers:
-    - 37
-    - 59
-    - 42
-    - 15
-- start_time: '2026-03-29 17:00:00'
+  type: oral
+  papers:
+  - 37
+  - 59
+  - 42
+  - 15
+- title: Overview
+  start_time: '2026-03-29 17:00:00'
   end_time: '2026-03-29 17:15:00'
-  session:
-    title: Overview
-    type: plenary
-- start_time: '2026-03-29 17:15:00'
+  type: oral
+  papers:
+  - 37
+- title: Awards and Closing
+  start_time: '2026-03-29 17:15:00'
   end_time: '2026-03-29 17:30:00'
-  session:
-    title: Awards and Closing
-    type: plenary
+  type: plenary

@@ -4,67 +4,67 @@
     title: Poster Session I - Linguistic Analysis and Language Structure
     type: poster
     papers:
-    - 'When Multilingual Evaluation Assumptions Fail: Tokenization Effects Across Scripts'
-    - 'Learning from Scarcity: Building and Benchmarking Speech Technology for Sukuma'
-    - Evaluating Large Language Models on Lithuanian Grammatical Cases
-    - 'The Indonesian Religiolect Corpus: Data Curation for Muslim, Protestant, and Catholic Language Varieties'
-    - 'Tokenization and Morphological Fidelity in Uralic NLP: A Cross-Lingual Evaluation'
-    - 'Out-Of-Tune rather than Fine-Tuned: How Pre-training, Fine-tuning and Tokenization Affect Semantic Similarity in a Historical, Non-Standardized Domain'
-    - 'LuxDiagRC: A Diagnostic Reading Comprehension Corpus for Luxembourgish with Linguistic and Cognitive Annotation Layers'
+    - 7
+    - 47
+    - 55
+    - 60
+    - 70
+    - 72
+    - 73
 - start_time: '2026-03-29 11:00:00'
   end_time: '2026-03-29 12:00:00'
   session:
     title: Poster Session II - Language Modelling and NLP Applications
     type: poster
     papers:
-    - 'Competence Collapse in Code-Mixed Generation: Spectral Evidence and Mechanistic Recovery via Cross-Lingual Activation Steering'
-    - 'To make someone do something: mining alert-style directives in Bulgarian social media for low-resource language modelling'
-    - Improving Romanian LLM Pretraining Data using Diversity and Quality Filtering
-    - 'LLM-as-a-Judge for Low-Resource Languages: Adapting Ragas and Comparative Ranking for Romanian'
-    - 'When LLMs Annotate: Reliability Challenges in Low-Resource NLI'
-    - 'TeluguEval: A Comprehensive Benchmark for Evaluating LLM Capabilities in Telugu'
-    - Cross-Lingual Emotion Recognition in Balinese Text using Multilingual-LLMs under Peer-Collaborations Settings
-    - '"We Are (Language) Family": Adapting Transformer models to related minority languages with linguistic data'
-    - Tracking the evolution of LLM capabilities for Belarusian with OpenAI Evals
-    - 'Representation-Aware Prompting for Zero-Shot Marathi Text Classification: IPA, Romanization, Repetition'
-    - 'MaiBERT: A Pre-training Corpus and Language Model for Low-Resourced Maithili Language'
-    - 'KyrText: A Multi-Domain Large-Scale Corpus for Kyrgyz Language'
-    - Pretraining and Benchmarking Modern Encoders for Latvian
-    - 'UrHiOdSynth: A Multilingual Synthetic Corpus for Speech-to-Speech Translation in Low-Resource Indic Languages'
-    - Parameter-Efficient Quality Estimation via Frozen Recursive Models
-    - 'Neural Machine Translation for French—Mooré: Adapting Large Language Models to Low-Resource Languages'
-    - 'Contributing to Speech-to-Speech Translation for African Low-Resource Languages: Study of French-Mooré Pair'
+    - 6
+    - 10
+    - 25
+    - 27
+    - 35
+    - 39
+    - 41
+    - 48
+    - 57
+    - 61
+    - 64
+    - 65
+    - 66
+    - 77
+    - 80
+    - 81
+    - 82
 - start_time: '2026-03-29 9:30:00'
   end_time: '2026-03-29 12:00:00'
   session:
     title: Virtual Poster Session
     type: poster
     papers:
-    - 'NE-BERT: A Multilingual Language Model for Nine Northeast Indian Languages'
-    - Do Tokenizers Fail on Informal Hindi Expressions? Evidence from Static, Downstream, and Robustness Analyses
-    - 'Making Large Language Models Speak Tulu: Structured Prompting for an Extremely Low-Resource Language'
-    - 'BanglaLlama: LLaMA for Bangla Language'
-    - Evaluating Retrieval-Augmented Generation for Medication Question Answering on Nigerian Drug Labels in Yorùbá
-    - 'Quantifying Cross-Lingual Interference: Algorithmic Standardization of Kamtapuri in Large Language Models'
-    - 'SinhaLegal: A Benchmark Corpus for Information Extraction and Analysis in Sinhala Legislative Texts'
-    - 'BanglaIPA: Towards Robust Text-to-IPA Transcription with Contextual Rewriting in Bengali'
-    - 'Tone in Yoruba ASR: Evaluating the Impact of Tone Recognition on Transformer-Based ASR Models'
-    - 'QARI: Neural Architecture for Urdu Extractive Machine Reading Comprehension'
-    - 'Anchoring the Judge: Curriculum-Based Adaptation and Reference-Anchored MQM for LLM-Based Machine Translation of an Unseen Low-Resource Language - A Case of Nupe'
-    - '"So, How Much Do LLMs Hallucinate on Low-Resource Languages?" A Quantitative and Qualitative Analysis'
-    - A Comprehensive Evaluation of Chain-of-Thought Faithfulness in Persian Classification Tasks
-    - 'Under-resourced studies of under-resourced languages: lemmatization and POS-tagging with LLM annotators for historical Armenian, Georgian, Greek and Syriac'
-    - 'Large Language Models for Mental Health: A Multilingual Evaluation'
-    - 'Serbian SuperGLUE: Towards an Evaluation Benchmark for South Slavic Language Models'
-    - 'Less is More: Adapting Text Embeddings for Low-Resource Languages with Small Scale Noisy Synthetic Data'
-    - 'Beyond Many-Shot Translation: Scaling In‑Context Demonstrations For Low‑Resource Machine Translation'
-    - 'Escaping the Probability Trap: Mitigating Semantic Drift in Cantonese-Mandarin Translation'
-    - How multilingual are multilingual LLMs? A case study in Northern Sámi-Finnish Translation
-    - Hebrew Diacritics Restoration using Visual Representation
-    - 'MTQE.en-he: Machine Translation Quality Estimation for English-Hebrew'
-    - Tokenization Cost, Retention, and Orthography Robustness for Ladin and Italian Varieties
-    - 'BanglaSummEval: Reference-Free Factual Consistency Evaluation for Bangla Summarization'
-    - Domain-Specific Quality Estimation for Machine Translation in Low-Resource Scenarios
+    - 3
+    - 5
+    - 9
+    - 11
+    - 12
+    - 19
+    - 21
+    - 24
+    - 26
+    - 30
+    - 38
+    - 46
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 58
+    - 68
+    - 69
+    - 71
+    - 75
+    - 76
+    - 79
+    - 83
 - start_time: '2026-03-29 12:00:00'
   end_time: '2026-03-29 14:00:00'
   break: Lunch
@@ -76,21 +76,21 @@
 - start_time: '2026-03-29 15:00:00'
   end_time: '2026-03-29 15:30:00'
   session:
-    title: Oral Session I - Syntactic analysis in the era of Language Models
+    title: Oral Session I - Syntactic Analysis in the era of Language Models
     type: oral
     papers:
-    - Cross-Lingual and Cross-Domain Transfer Learning for POS Tagging in Historical Germanic Low-Resource Languages
-    - Targeted Syntactic Evaluation of Language Models on Georgian Case Alignment
+    - 74
+    - 43
 - start_time: '2026-03-29 16:00:00'
   end_time: '2026-03-29 17:00:00'
   session:
     title: Oral Session II - Language Modelling and Applications
     type: oral
     papers:
-    - 'Qomhrá: A Bilingual Irish and English Large Language Model'
-    - Bootstrapping Embeddings for Low Resource Languages
-    - Enabling Structured Reasoning in Sindhi with Culturally Grounded Instruction Tuning
-    - 'Grammatical Error Correction for Low-Resource Languages: The Case of Zarma'
+    - 37
+    - 59
+    - 42
+    - 15
 - start_time: '2026-03-29 17:00:00'
   end_time: '2026-03-29 17:15:00'
   session:

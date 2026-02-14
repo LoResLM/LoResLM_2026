@@ -2924,3 +2924,108 @@
   pdf_file: eac48a0a3c505bd72b03e9bb81712a8270ec041d.pdf
   title: Domain-Specific Quality Estimation for Machine Translation in Low-Resource
     Scenarios
+- abstract: The second workshop on Language Models for Low-Resource Languages (LoResLM
+    2026) was held in conjunction with the 19th Conference of the European Chapter
+    of the Association for Computational Linguistics (EACL 2026) in Rabat, Morocco.
+    This workshop mainly aimed to provide a forum for researchers to share and discuss
+    their ongoing work on language models (LMs) focusing on low-resource languages
+    and dialects, following recent advancements in neural language models and their
+    linguistic biases towards high- resource languages. LoResLM 2026 attracted a notable
+    interest from the natural language processing (NLP) community, resulting in 55
+    accepted papers from 79 submissions. These contributions cover a broad range of
+    low-resource languages from 13 language families and 11 diverse research areas,
+    paving the way for future possibilities and promoting linguistic inclusivity in
+    NLP.
+  attributes:
+    paper_type: N/A
+    presentation_type: N/A
+    submitted_area: ''
+  authors:
+  - dblp_id: https://dblp.org/pid/256/4266
+    emails: '****@lancaster.ac.uk'
+    first_name: Hansi
+    google_scholar_id: https://scholar.google.com/citations?user=AcYfLvgAAAAJ&hl=en
+    institution: Lancaster University
+    last_name: Hettiarachchi
+    name: Hansi Hettiarachchi
+    orcid: https://orcid.org/0000-0003-4609-5001
+    username: ~Hansi_Hettiarachchi1
+  - dblp_id: https://dblp.org/pid/242/4755
+    emails: t.ranasinghe@lancaster.ac.uk
+    first_name: Tharindu
+    google_scholar_id: https://scholar.google.co.uk/citations?user=9t7WhIIAAAAJ&hl=en
+    homepage: https://tharindu.co.uk/
+    institution: Lancaster University
+    last_name: Ranasinghe
+    name: Tharindu Ranasinghe
+    orcid: https://orcid.org/0000-0003-3207-3821
+    semantic_scholar_id: https://www.semanticscholar.org/author/Tharindu-Ranasinghe/134805041
+    username: ~Tharindu_Ranasinghe1
+  - dblp_id: https://dblp.org/pid/242/4807.html
+    emails: '****@uni.lu'
+    first_name: Alistair
+    google_scholar_id: https://scholar.google.com/citations?user=CCQh3QYAAAAJ&hl=en
+    institution: University of Luxembourg
+    last_name: Plum
+    name: Alistair Plum
+    orcid: https://orcid.org/0000-0003-0977-3467
+    semantic_scholar_id: https://www.semanticscholar.org/author/Alistair-Plum/136939562
+    username: ~Alistair_Plum1
+  - dblp_id: https://dblp.org/pid/96/5736
+    emails: '****@lancaster.ac.uk'
+    first_name: Paul
+    google_scholar_id: https://scholar.google.co.uk/citations?user=DACFB-kAAAAJ&hl=en
+    homepage: https://www.lancaster.ac.uk/scc/about-us/people/paul-rayson
+    institution: Lancaster University
+    last_name: Rayson
+    name: Paul Rayson
+    orcid: https://orcid.org/0000-0002-1257-2191
+    username: ~Paul_Rayson1
+  - dblp_id: https://dblp.org/pid/44/3435
+    emails: '****@lancaster.ac.uk'
+    first_name: Ruslan
+    institution: Lancaster University
+    last_name: Mitkov
+    name: Ruslan Mitkov
+    username: ~Ruslan_Mitkov1
+  - dblp_id: https://dblp.org/pid/75/5251
+    emails: '****@bcu.ac.uk'
+    first_name: Mohamed
+    google_scholar_id: https://scholar.google.co.uk/citations?user=EAGIF8gAAAAJ&hl=en
+    homepage: https://mohamedmgaber.weebly.com/
+    last_name: Gaber
+    middle_name: Medhat
+    name: Mohamed Medhat Gaber
+    orcid: https://orcid.org/0000-0003-0339-4474
+    username: ~Mohamed_Medhat_Gaber2
+  - emails: '****@gmail.com'
+    first_name: Damith
+    google_scholar_id: https://scholar.google.com/citations?user=4G1WhxMAAAAJ&hl=en
+    last_name: Premasiri
+    name: Damith Premasiri
+    username: ~Damith_Premasiri1
+  - dblp_id: https://dblp.org/pid/304/2653
+    emails: '****@u.nus.edu'
+    first_name: Fiona
+    google_scholar_id: https://scholar.google.com/citations?user=UmNw2zQAAAAJ&hl=en
+    homepage: https://tanfiona.github.io/
+    last_name: Tan
+    middle_name: Anting
+    name: Fiona Anting Tan
+    orcid: https://orcid.org/0000-0002-2828-1831
+    username: ~Fiona_Anting_Tan1
+  - emails: '****@uni-muenster.de'
+    first_name: Lasitha
+    google_scholar_id: https://scholar.google.de/citations?user=b1A8p6MAAAAJ
+    homepage: https://www.researchgate.net/profile/Lasitha-Uyangodage
+    institution: Westfälische Wilhelms-Universität Münster
+    last_name: Uyangodage
+    name: Lasitha Uyangodage
+    username: ~Lasitha_Uyangodage1
+  decision: '2026'
+  file: 84.pdf
+  id: 84
+  openreview_id: AEKb8nHAJ7
+  pdf_file: 62b6780f5546afb9649eaaf7c331c65b1d46f4c0.pdf
+  title: Overview of the Second Workshop on Language Models for Low-Resource Languages
+    (LoResLM 2026)
